@@ -12,11 +12,12 @@ This is a sample blog post. You can talk about all sorts of fun things here.
 
 #### Some T-SQL Code
 
-```tsql
-SELECT This, [Is], A, Code, Block -- Using SSMS style syntax highlighting
-    , REVERSE('abc')
-FROM dbo.SomeTable s
-    CROSS JOIN dbo.OtherTable o;
+```python
+import pandas as pd
+import numpy as np
+
+for i in range(10):
+    print(i)
 ```
 
 #### Some PowerShell Code
