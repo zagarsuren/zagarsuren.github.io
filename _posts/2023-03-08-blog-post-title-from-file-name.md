@@ -12,7 +12,7 @@ This is a sample blog post. You can talk about all sorts of fun things here.
 
 #### Some T-SQL Code
 
-```Python
+```python
 import pandas as pd
 import numpy as np
 
@@ -30,4 +30,7 @@ Write-Host "This is a powershell Code block";
 ForEach ($thing in $things) {
     Write-Output "It highlights it using the GitHub style"
 }
+```
+```sql
+select * from foo
 ```
