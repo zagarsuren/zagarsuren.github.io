@@ -12,7 +12,7 @@ This is a sample blog post. You can talk about all sorts of fun things here.
 
 #### Some T-SQL Code
 
-```python
+```Python
 import pandas as pd
 import numpy as np
 
@@ -31,6 +31,8 @@ ForEach ($thing in $things) {
     Write-Output "It highlights it using the GitHub style"
 }
 ```
+
+
 ```sql
 select * from foo
 ```

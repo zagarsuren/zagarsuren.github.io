@@ -10,17 +10,20 @@ A* search can be used for a complex graph to find an optimal solution. However, 
 
 ## 1. Introduction
 Classic search algorithms, such as breadth-first search (BFS), depth-first search (DFS), Dijkstra’s algorithm or uniform cost search, greedy best-first search and A* search algorithm, have been successfully applied in various domains. Uninformed and informed search techniques have been developed since 1957, when Newell and other scholars started working in this field. The breadth-first search was established by Moore (1959), Simon and Newell (1958) first developed the heuristic functions, and the A* technique was introduced by Hart et al. (1968). These papers are fundamental to modern search techniques. In this report, the uninformed and informed family of search algorithms, namely, breadth-first search, greedy-best first search and A* search algorithms, will be implemented to solve the navigational search problem in Australia's tourism industry.
-##### Problem
+
+**A Problem**
 Finding the shortest path between cities is complex and time-consuming for tourists without an intelligent application. The search algorithms help tourists to find an optimal route from the start destination to the goal destination. 
 This report aims to harness the power of the search algorithms to solve the simplified real-world problem of efficient travel routes, considering various constraints and preferences.
 The significance of this report lies in its potential to revolutionise how tourists plan and experience their trips. By leveraging classic search algorithms and modern data-driven techniques, implementing the algorithm will provide tourists with personalised, cost-efficient decision-making on their travel.
-##### Data sources
+
+**Data sources**
 To implement the solution, collected and prepared data using Australia’s top tourist destinations and sightseeing. Australia’s top sixteen tourist destinations were adapted from the Ytravel Blog. Then, the coordinates of each location were collected using Google Maps. A more detailed explanation of data pre-processing will be discussed in section 2. 
-##### Navigational search problem formulation
+
+**Navigational search problem formulation**
 The search problem is formulated in this report: The agent starts from Freycinet National Park and aims to reach Kakadu National Park in the northern territory. The search algorithm will find the shortest path between the start location and the goal destination. 
  
 Components of the search problem (Russell & Norvig, 2021):
-- 	**The state space.** State space is a set of possible states agents can travel in the environment. The states are shown below in Figure 1. Location X and Location Y define the Longitude and Latitude, respectively. 
+- **The state space.** State space is a set of possible states agents can travel in the environment. The states are shown below in Figure 1. Location X and Location Y define the Longitude and Latitude, respectively. 
 - **Initial state.** In this problem, the initial or start state is Freycinet National Park in Tasmania.
 S = FreycinetPark
 - **Goal state.** The agent’s goal is to reach the Kakadu National Park in the Northern Territory. 
