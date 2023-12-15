@@ -268,7 +268,7 @@ In conclusion, choosing the search algorithm depends on the problem and requirem
 
 The choice of search algorithm depends on what kind of problem we are trying to solve. When the action costs are identical or an unweighted small graph, the breadth-first search is a suitable solution for that problem. When the task requires memory and is time efficient, the greedy best-first search could solve the problem. A* search can be used for a complex graph to find an optimal solution. Nevertheless, we must consider choosing the correct heuristic design and memory issue. The proper heuristic function is crucial for greedy best-first and A* search. In future work, implementing and testing the extended versions of algorithms, such as Weighted A*, Bidirectional A*, and beam search, could be helpful. 
 
-
+---
 ## List of References
 Barr, A., Feigenbaum, E. A., & Cohen, P. R. (1981). The Handbook of artificial intelligence. HeirisTech Press.
 Evers, J., Editing, E., & Editing, E. (20 December 2022). Latitude is the measurement of distance north or south of the Equator. National Geographic. https://education.nationalgeographic.org/resource/latitude/ 
