@@ -165,7 +165,6 @@ After finishing the data pre-processing, we have the following two datasets to p
 - destinations_correlation_matrix.csv
 
 #### 2.2.2.	Classes and methods
-The following modules are adapted from Lab 2. 
 - BFS.py – Implementation of breadth-first search algorithm.
 - BFS_for_graph.py – Visualisation of Breadth-first search algorithm.
 - BestFirstSearch.py – Implementation of best first search algorithms.
