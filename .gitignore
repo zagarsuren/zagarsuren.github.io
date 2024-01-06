@@ -1,4 +1,4 @@
 ﻿_site
 _posts/
-*.md
+# *.md
 *.csv
