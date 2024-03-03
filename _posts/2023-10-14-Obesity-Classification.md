@@ -199,7 +199,7 @@ To implement the Logistic Regression model in a multinomial setting, used the Sc
 Results of the Logistic Regression Model, including the estimated coefficients for class 4 (Obesity Type III) are summarised below. 
 
 ![img](https://i.imgur.com/d3aNyIo.png)
-*Figure 9. Confusion Matrix of Logistic Regression*
+*Figure 9. Coefficients and Confusion Matrix of Logistic Regression*
 
 Classification report of Logistic Regression on test set is summarised below. 
 
