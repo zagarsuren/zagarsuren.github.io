@@ -1,4 +1,4 @@
-# Mini AI Project: Search Algorithms
+# Mini AI Project: The Classic Search Algorithms
 
 This project aims to develop a navigational search algorithm using a family of uninformed and informed algorithms to find the shortest path between two tourist destinations using a simplified real-world problem.   Key objectives of this project include formulating the search problem, testing the different algorithms for navigational search context, and recommending a suitable algorithm for a given problem. 
 
@@ -280,4 +280,5 @@ Moore, E. F. (1959). The Shortest Path Through a Maze. United States: Bell Telep
 Newell, A., Shaw, J. C., & Simon, H. A. (1958). Elements of a theory of human problem-solving. Psychological Review, 65(3), 151–166. https://doi.org/10.1037/h0048495
 
 Hart, P., Nilsson, N., & Raphael, B. (1968). A Formal Basis for the Heuristic Determination of Minimum Cost Paths. IEEE Transactions on Systems Science and Cybernetics, 4(2), 100–107. https://doi.org/10.1109/TSSC.1968.300136
+
 Russell, S., & Norvig, P. (2021). Artificial intelligence: A modern approach, global edition. Pearson Education, Limited.
