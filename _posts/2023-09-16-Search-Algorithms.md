@@ -121,7 +121,7 @@ The greedy best-first search and A* search are two main informed search algorith
 
 A Greedy best-first search algorithm utilises the evaluation function of f(n) = h(n). This makes the algorithm quicker to reach the goal (Barr & Feigenbaum, 1981).
 
-Key points of greedy best-first search algorithm (Adapted from Lecture 2):
+Key points of greedy best-first search algorithm:
 	Expands first the node with the lowest h(n) value.
 	The evaluation function f(n) = h(n)
 	In our problem, h(n) is defined as the straight-line distance between the current node to a goal node, h(n)= h_SLD  
@@ -135,7 +135,7 @@ Figure 5 illustrates the stages of the greedy best-first search algorithm to fin
 
 A* search is the most common informed search algorithm. The difference between the A* search and greedy best-first search algorithm is that it uses the evaluation function of f(n) = g(n) + h(n), where g(n) is the path cost from the start state to node n (Hart et al., 1968).
 
-Key points of A* search algorithm (Adapted from Lecture 2):
+Key points of A* search algorithm:
 - A form of best-first search with the evaluation function f(n) = g(n) + h(n)
 - g(n) is the path cost from the start state to node n
 - h(n) is the estimated cost of the shortest path from n to a goal state.
@@ -151,11 +151,11 @@ The following section will explain the implementation of breadth-first, greedy b
 
 
 ### 2.2. Implementation of AI techniques
-To solve the defined problem and implement the search techniques, conducted data collection and pre-processing. After preparing the data, created an environment on Google Colab and prepared the required modules and functions using Lab 2 materials. Finally, run the search algorithms on the problem data and compare the results.
+To solve the defined problem and implement the search techniques, conducted data collection and pre-processing. After preparing the data, created an environment and prepared the required modules and functions. Finally, run the search algorithms on the problem data and compare the results.
 
 #### 2.2.1. Data collection and pre-processing
 The top tourist destinations in Australia are adapted from the Ytravel Blog. To simplify the problem, the Great Barrier Reef, Byron Bay NSW, Wilsons Promontory VIC, and the Great Ocean Road were removed from the locations used. In total, 16 locations will be used to construct the search space. Then, each coordinate, LocationX and LocationY, are collected using Google Maps. The coordinates of the locations are shown in Figure 1.
-The function `define_map` is adapted from Lab to calculate the Euclidean distance between nodes. The distance is based on the degree of latitude and longitude. To understand the real-world scenario, converted the degree of latitude and longitude to kilometres, multiplying by 111. According to the National Geographic Society, one degree of latitude, called an arc degree, covers about 111 kilometres.  In line with “Figure 2 – The simplified map of Australia’s top tourist destinations”, a new dataset called `destinations_correlation_matrix.csv` was created and displayed in the figure below. This data will be used to create the graph data and perform search algorithms. 
+The function `define_map` is to calculate the Euclidean distance between nodes. The distance is based on the degree of latitude and longitude. To understand the real-world scenario, converted the degree of latitude and longitude to kilometres, multiplying by 111. According to the National Geographic Society, one degree of latitude, called an arc degree, covers about 111 kilometres.  In line with “Figure 2 – The simplified map of Australia’s top tourist destinations”, a new dataset called `destinations_correlation_matrix.csv` was created and displayed in the figure below. This data will be used to create the graph data and perform search algorithms. 
 
 ![Imgur](https://i.imgur.com/f1RYc8L.png)
 *Figure 7. Correlation matrix between locations (destinations_correlation_matrix.csv)*
