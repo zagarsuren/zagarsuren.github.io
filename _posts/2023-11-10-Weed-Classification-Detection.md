@@ -217,9 +217,15 @@ The model's performance employs different evaluations, and the following section
 
 Object detectors employ several criteria to assess their performance, including metrics such as frames per second (FPS), precision, and recall. Nevertheless, the mean Average Precision (mAP) is the most prevalent evaluation measure. Precision is calculated based on Intersection over Union (IoU), which quantifies the ratio of the overlapping area to the union area between the actual object and the predicted bounding box. An established threshold is utilised to determine the accuracy of the detection. When the IoU surpasses this threshold, it is classified as a True Positive, whereas an IoU below the threshold is considered a False Positive. If the model fails to detect an object that exists in the ground truth, it is termed a False Negative. Precision assesses the percentage of accurate predictions, whereas recall evaluates the accurate predictions relative to the ground truth (Zaidi et al., 2022).
 
-$Precision =  {True Positives \over True Positives+False Positives}$
+$$
+\text{Precision} = \frac{\text{True Positives}}{\text{True Positives} + \text{False Positives}}
+$$
 
-$Recall =  {True Positives \over True Positives+False Negatives}$
+<br/>
+
+$$
+\text{Recall} = \frac{\text{True Positives}}{\text{True Positives} + \text{False Negatives}}
+$$
 
 
 **mAP – Mean average precision**
@@ -240,7 +246,10 @@ Intersection over union is a measurement used to evaluate the accuracy of object
 Union calculates the area encompassed by the predicted bounding box and the ground truth bounding box, including their areas of overlap. To compute IoU, divide the area of intersection by the area of union. Mathematically, it's represented as:
 
 
-$$IoU =  {AreaofIntersection \over Area of Union}$$
+$$
+\text{IoU} = \frac{\text{Area of Intersection}}{\text{Area of Union}}
+$$
+
 
 ---
 
