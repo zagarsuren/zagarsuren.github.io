@@ -129,7 +129,7 @@ Some examples of data augmentation on YOLOWeeds dataset shown in the figure belo
 
 We will use the Pytorch framework and EfficientNet-PyTorch (https://github.com/lukemelas/EfficientNet-PyTorch) library to train the EfficientNet model. 
 
-```python
+```Python
 from efficientnet_pytorch import EfficientNet
 model = EfficientNet.from_pretrained('efficientnet-b0')
 ```
