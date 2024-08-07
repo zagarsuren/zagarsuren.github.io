@@ -18,18 +18,18 @@ The data set contains ten folders or classes, and each folder has 500 images; in
 
 Data preparation includes label creation from subfolders, label encoding, train and test set split, and feature extraction for given images.
 
-•	Label creation. To train the model, create the labels from subfolders using the folder name. 
+* Label creation. To train the model, create the labels from subfolders using the folder name. 
 
-•	Label encoding. Using Scikit-Learn’s Label Encoder method, the categorical labels were encoded into numeric representations. The encoded dictionary is as follows: 
+* Label encoding. Using Scikit-Learn’s Label Encoder method, the categorical labels were encoded into numeric representations. The encoded dictionary is as follows: 
 `{'!': 0, '(': 1, '+': 2, 'beta': 3, 'cos': 4, 'log': 5, 'pi': 6, 'pm': 7, 'tan': 8, 'theta': 9}`
 
-•	Train and test split. After preparing the labels and dataset, split it into train and test sets with a test size of 30% of the original dataset. After splitting the original dataset, the training dataset has 3500 samples, and the test dataset has 1500 samples. 
+* Train and test split. After preparing the labels and dataset, split it into train and test sets with a test size of 30% of the original dataset. After splitting the original dataset, the training dataset has 3500 samples, and the test dataset has 1500 samples. 
 
 ### 2.3. Feature extraction
 
-•	HoG parameters are configured as below:
-Orientation = 9, pixels_per_cell = (10,10), cells_per_block = (2,2)
-•	LBP parameters are configured as below: 
+* HoG parameters are configured as below:
+Orientation = 9, pixels_per_cell = (10,10), cells_per_block = (2,2) <br>
+* LBP parameters are configured as below: 
 `NumPoint = 32`, `Radius = 6`
 
 For the LBP feature, experimented with different parameter settings. NumPoint = 32, Radius = 8 gives 0.738 accuracy score, NumPoint = 24, Radius = 8 gives accuracy score of 0.7127, NumPoint = 8, Radius = 3 gives accuracy of 0.6520 on SVM. The best configuration is NumPoints = 32 and Radius = 6, which gives an accuracy of 0.746.
@@ -68,10 +68,10 @@ Output layers|	10, Softmax|	10, Softmax|	10, Softmax|
 
 The same optimizer, loss function, metrics and callbacks are configured for each   
 feature. 
-•	optimizer = ‘adam’
-•	loss=‘sparse_categorical_crossentropy’
-•	metrics = ‘accuracy’
-•	callbacks (loss <0.1)
+* optimizer = ‘adam’
+* loss=‘sparse_categorical_crossentropy’
+* metrics = ‘accuracy’
+* callbacks (loss <0.1)
 The number of epochs configured is 10 for HoG, 100 for LBP, and 50 for Raw Pixels. 
 
 
