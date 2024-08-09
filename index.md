@@ -1,7 +1,5 @@
 ![img](https://i.imgur.com/YxrrJVb.png)
-
-### Hi there 👋
-
+<br> 
 ## 💫 About Me:
 👨‍🎓 Pursuing a Master of Artificial Intelligence, sub-majoring in Computer Vision at the University of Technology Sydney (UTS), Australia. <br> 
 📚 I write about Data Analytics, Machine Learning, AI and Computer Vision <br> 
