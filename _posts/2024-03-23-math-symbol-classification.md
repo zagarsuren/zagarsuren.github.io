@@ -1,4 +1,4 @@
-# Handwritten mathematical symbol classification using SVM and ANN
+# Handwritten Mathematical Symbol Classification using SVM and ANN
 
 ## 1. Introduction
 
