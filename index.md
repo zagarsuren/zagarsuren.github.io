@@ -1,10 +1,11 @@
 ![img](https://i.imgur.com/YxrrJVb.png)
 <br> 
 ## 💫 About Me:
-👨‍🎓 Pursuing a Master of Artificial Intelligence, sub-majoring in Computer Vision at the University of Technology Sydney (UTS), Australia. <br> 
-📚 I write about Data Analytics, Machine Learning, AI and Computer Vision <br> 
-🌱 A lifelong learner and always learning new Data and AI trends <br> 
-💬 Ask me about Data Science and Analytics, ML algorithms, NLP, and Computer vision.<br> 
+👨‍🎓 Pursuing a Master of Artificial Intelligence with a specialization in Computer Vision at the University of Technology Sydney (UTS), Australia. <br> 
+📚 Passionate about exploring and writing on Data Analytics, Machine Learning, AI, and Computer Vision. <br> 
+🌱 A lifelong learner, constantly keeping up with the latest trends in Data and AI.<br> 
+💬 Feel free to ask me about Data Science, Analytics, ML algorithms, NLP, and Computer Vision.<br> 
+🤝 Open to collaboration and knowledge-sharing on innovative projects.
 
 ## 🌐 Socials:
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white)](https://www.linkedin.com/in/zagarsuren/)
