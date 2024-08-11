@@ -29,7 +29,7 @@ from tensorflow.keras.preprocessing.image import ImageDataGenerator
 # Set for recproducibility
 import os
 import random
-seed = 25077001
+seed = 25
 random.seed(seed)
 os.environ["PYTHONHASHSEED"] = str(seed)
 np.random.seed(seed)
