@@ -1,4 +1,4 @@
-# Mathematical Symbol Classification using HoG feature
+# Handwritten Mathematical Symbol Classification using HoG feature (Code)
 
 ## Outline
 1. Environment preparation
