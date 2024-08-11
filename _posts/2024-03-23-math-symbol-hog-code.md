@@ -245,7 +245,8 @@ plt.title(all_sample_title, size = 12);
 
 
     
-![png](src/dl_hog/output_25_0.png)
+![png](/assests/dl_hog/output_25_0.png)
+
     
 
 
@@ -314,7 +315,7 @@ display_results_svm(true_indices_svm)
 
 
     
-![png](src/dl_hog/output_30_0.png)
+![png](/assests/dl_hog/output_30_0.png)
     
 
 
@@ -326,7 +327,7 @@ display_results_svm(misclassified_indices_svm)
 
 
     
-![png](src/dl_hog/output_31_0.png)
+![png](/assests/dl_hog/output_31_0.png)
     
 
 
@@ -427,7 +428,7 @@ keras.utils.plot_model(model_ann, to_file=modelViz_file, show_shapes=True)
 
 
     
-![png](src/dl_hog/output_39_0.png)
+![png](/assests/dl_hog/output_39_0.png)
     
 
 
@@ -452,13 +453,13 @@ plt.show()
 
 
     
-![png](src/dl_hog/output_40_0.png)
+![png](/assests/dl_hog/output_40_0.png)
     
 
 
 
     
-![png](src/dl_hog/output_40_1.png)
+![png](/assests/dl_hog/output_40_1.png)
     
 
 
@@ -469,10 +470,6 @@ model_ann.evaluate(X_train_hog, y_train)
 ```
 
     110/110 [==============================] - 0s 2ms/step - loss: 0.0658 - accuracy: 0.9831
-
-
-
-
 
     [0.0658428966999054, 0.9831428527832031]
 
@@ -487,10 +484,6 @@ model_ann.evaluate(X_test_hog, y_test)
 ```
 
     47/47 [==============================] - 0s 2ms/step - loss: 0.1169 - accuracy: 0.9667
-
-
-
-
 
     [0.11694876104593277, 0.9666666388511658]
 
@@ -544,7 +537,7 @@ plt.title(all_sample_title, size = 12);
 
 
     
-![png](src/dl_hog/output_47_0.png)
+![png](/assests/dl_hog/output_47_0.png)
     
 
 
@@ -618,7 +611,7 @@ display_results_ann(true_indices_ann)
 
 
     
-![png](src/dl_hog/output_52_1.png)
+![png](/assests/dl_hog/output_52_1.png)
     
 
 
@@ -633,7 +626,7 @@ display_results_ann(misclassified_indices_ann)
 
 
     
-![png](src/dl_hog/output_53_1.png)
+![png](/assests/dl_hog/output_53_1.png)
     
 
 
