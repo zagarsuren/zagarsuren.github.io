@@ -85,19 +85,6 @@ folder_path = "/root/ObjectDetection-FasterRCNN/data/pascal/train"
 display_images(folder_path)
 ```
 
-    (1080, 1920, 3)
-    (1080, 1920, 3)
-    (1080, 1920, 3)
-    (1080, 1920, 3)
-    (1080, 1920, 3)
-    (1080, 1920, 3)
-    (1080, 1920, 3)
-    (1080, 1920, 3)
-    (1080, 1920, 3)
-    (1080, 1920, 3)
-
-
-
     
 ![png](/assests/faster_rcnn_lettuce/output_10_1.png)
     
