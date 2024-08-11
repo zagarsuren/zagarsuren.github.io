@@ -593,7 +593,6 @@ def display_results_ann(image_indices):
   plt.show()
 ```
 
-
 ```python
 # Create indices
 true_indices_ann = np.where(y_pred_ann == y_test)[0]
