@@ -43,9 +43,9 @@ np.random.seed(seed)
 
 
 ```python
-train_folder = "ImageClassification/train"
-valid_folder = "ImageClassification/valid"
-test_folder = "ImageClassification/test"
+train_folder = "/ImageClassification/train"
+valid_folder = "/ImageClassification/valid"
+test_folder = "/ImageClassification/test"
 ```
 
 
@@ -200,7 +200,7 @@ model.compile(loss='categorical_crossentropy',
 
 ```python
 # Define check pointing
-filepath='Image_Classification/weights/weights.{epoch:02d}-{val_loss:.2f}.hdf5'
+filepath='/Image_Classification/weights/weights.{epoch:02d}-{val_loss:.2f}.hdf5'
 checkpoint=tf.keras.callbacks.ModelCheckpoint(filepath, monitor='val_loss', verbose=0, save_best_only=True, save_weights_only=False, mode='auto', save_freq='epoch')
 ```
 
@@ -413,7 +413,7 @@ def predict_single_image(image_path):
 
 ```python
 # Path to single image
-image_path = '/root/42028/AT2/ImageClassification/test/affenpinscher/143.jpg'
+image_path = '/ImageClassification/test/affenpinscher/143.jpg'
 
 img = image.load_img(image_path, target_size=(224, 224, 3))
 plt.imshow(img)
