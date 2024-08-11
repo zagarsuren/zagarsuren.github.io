@@ -149,3 +149,5 @@ The examples of misclassified images are shown in Figure 9 and Figure 10.
 ## Conclusion 
 
 In conclusion, this study on handwritten mathematical symbol classification using HoG, LBP, and raw pixel intensities, combined with SVM and ANN, has provided valuable insights into the effectiveness of different feature extraction methods and classification algorithms. The HoG features outperformed LBP and raw pixel representations, demonstrating their efficacy in capturing edge and gradient information crucial for symbol discrimination. Also, raw pixel intensities yielded competitive results, highlighting the importance of simple and comprehensive feature representations. Furthermore, SVM exhibited superior performance compared to ANN in HoG and raw pixel feature spaces. Overall, this experiment can contribute to developing robust and accurate handwritten symbol recognition systems with potential applications in OCR, educational technology, and document processing.
+
+### The code implementation can be found here: [Link](https://zagarsuren.github.io/2024/03/23/math-symbol-hog-code.html)
