@@ -185,10 +185,10 @@ Future extensions and improvements:
 ---
 ## 5. References 
 
-CowBehaviorDetection. (2024). Cow behavior detection dataset [Open Source Dataset]. Roboflow Universe. https://universe.roboflow.com/cowbehaviordetection/cow_behavior_detection-veqgv
-Jacob, S., & Francesco. (2024). What is YOLOv8? The Ultimate Guide. https://blog.roboflow.com/whats-new-in-yolov8/
-Kirkland, P., & MacKintosh, S. (2016). Ruminant Pestivirus Infections. Australia and New Zealand Standard Diagnostic Procedures. https://www.agriculture.gov.au/sites/default/files/sitecollectiondocuments/animal/ahl/ANZSDP-Pestiviruses.pdf
-Redmon, J., Divvala, S., Girshick, R., & Farhadi, A. (2016). You Only Look Once: Unified, Real-Time Object Detection (arXiv:1506.02640). arXiv. http://arxiv.org/abs/1506.02640
+CowBehaviorDetection. (2024). Cow behavior detection dataset [Open Source Dataset]. Roboflow Universe. https://universe.roboflow.com/cowbehaviordetection/cow_behavior_detection-veqgv <br>
+Jacob, S., & Francesco. (2024). What is YOLOv8? The Ultimate Guide. https://blog.roboflow.com/whats-new-in-yolov8/<br>
+Kirkland, P., & MacKintosh, S. (2016). Ruminant Pestivirus Infections. Australia and New Zealand Standard Diagnostic Procedures. https://www.agriculture.gov.au/sites/default/files/sitecollectiondocuments/animal/ahl/ANZSDP-Pestiviruses.pdf<br>
+Redmon, J., Divvala, S., Girshick, R., & Farhadi, A. (2016). You Only Look Once: Unified, Real-Time Object Detection (arXiv:1506.02640). arXiv. http://arxiv.org/abs/1506.02640<br>
 Ren, S., He, K., Girshick, R., & Sun, J. (2016). Faster R-CNN: Towards Real-Time Object Detection with Region Proposal Networks (arXiv:1506.01497). arXiv. http://arxiv.org/abs/1506.01497
 
 
