@@ -11,10 +11,10 @@
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white)](https://www.linkedin.com/in/zagarsuren/)
 
 ## Contact:
-Faculty of Engineering and Information Technology,
-University of Technology Sydney,
-School of Computer Science,
-Broadway, Ultimo, NSW 2007 Australia
+Faculty of Engineering and Information Technology,<br> 
+University of Technology Sydney,<br> 
+School of Computer Science,<br> 
+Broadway, Ultimo, NSW 2007 Australia<br> 
 Email: [zagarsuren.sukhbaatar@student.uts.edu.au](zagarsuren.sukhbaatar@student.uts.edu.au)
 
 ## Tech Stacks:
