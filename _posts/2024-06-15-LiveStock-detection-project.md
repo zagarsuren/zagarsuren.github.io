@@ -151,7 +151,7 @@ Inference results
 ![img](/assests/livestock_project/cattle10.png)
 
 ### Demo Video:
-<iframe width="960" height="640" src="https://www.youtube.com/embed/E_jsOMbI-yE?si=AgPci3GnaYb6quON" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe width="850" height="540" src="https://www.youtube.com/embed/E_jsOMbI-yE?si=AgPci3GnaYb6quON" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 ### 3.4 Limitations
 
