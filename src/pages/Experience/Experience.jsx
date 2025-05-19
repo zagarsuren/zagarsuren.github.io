@@ -55,24 +55,24 @@ const ExperienceSection = () => {
   const experiences = [
     {
       icon: Network,
-      title: "Data Scientist",
-      company: "Company 1",
+      title: "Founder & CEO",
+      company: "Company 3",
       period: "2019 - 2020",
       description:
         "Worked on developing and customizing WordPress websites for clients globally.",
     },
     {
       icon: Layers,
-      title: "Junior Frontend Developer",
-      company: "Sera Programmer",
+      title: "Data Science Manager",
+      company: "Company 2",
       period: "2021 - 2023",
       description:
         "Assisted in building and optimizing user interfaces with a focus on responsive and interactive designs.",
     },
     {
       icon: Code2,
-      title: "JavaScript Developer",
-      company: "OlovJS (Sera Programmer)",
+      title: "Senior Data Analyst",
+      company: "Company 1",
       period: "2023 - Present",
       description:
         "Contributed to developing JavaScript libraries and enhancing framework functionalities.",
