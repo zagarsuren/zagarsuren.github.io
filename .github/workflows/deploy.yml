@@ -24,6 +24,9 @@ jobs:
       - name: 🏗 Build project
         run: npm run build
 
+      - name: 📦 Deploy project
+        run: npm run deploy
+
       - name: 🚀 Deploy to GitHub Pages (main branch root)
         run: |
           rm -rf .git .github
