@@ -22,7 +22,7 @@ const EducationSection = () => {
       achievements: ["GPA: 4.89", "Subject: AI"],
       skills: ["Computer Vision", "Image Processing", "Deep Learning", "AI"],
       description:
-        "Focused on core science subjects with emphasis on practical laboratory work and scientific research methodologies.",
+        "Focused on core AI subjects with emphasis on practical laboratory work and scientific research methodologies.",
     },
     {
       degree: "Bachelor of Statistics",
@@ -32,7 +32,7 @@ const EducationSection = () => {
       achievements: ["GPA: 4.25", "Subject: Statistics"],
       skills: ["Economics", "Statistics", "Econometrics", "Data Analysis"],
       description:
-        "Developed strong analytical and critical thinking skills through comprehensive study of humanities and social sciences.",
+        "Developed strong analytical and critical thinking skills through comprehensive study of statistics.",
     },
   ];
 
