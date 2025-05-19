@@ -15,12 +15,12 @@ const EducationSection = () => {
 
   const educationData = [
     {
-      degree: "UTS",
-      school: "Natore Textile Institute",
+      degree: "Master of AI, sub-major in Computer Vision",
+      school: "University of Technology Sydney (UTS)",
       mascot: "📘",
-      year: "2019-2021",
-      achievements: ["GPA: 4.89", "Subject: Science"],
-      skills: ["Mathematics", "Physics", "Chemistry", "Biology"],
+      year: "2023-2025",
+      achievements: ["GPA: 4.89", "Subject: AI"],
+      skills: ["Computer Vision", "Image Processing", "Deep Learning", "AI"],
       description:
         "Focused on core science subjects with emphasis on practical laboratory work and scientific research methodologies.",
     },
