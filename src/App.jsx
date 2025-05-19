@@ -7,8 +7,11 @@ import Header from "./pages/Header/Header";
 import Hero from "./pages/Hero/Hero";
 import Skills from "./pages/Skills/Skills";
 import Education from "./pages/Education/Education";
+import ProjectDetails from "./pages/ProjectDetails";
 
 import { Route, Routes } from "react-router-dom";
+
+
 
 export default function App() {
   const [isOnePage, setIsOnePage] = useState(false); // Toggle state
@@ -35,6 +38,7 @@ export default function App() {
           <Route path="/education" element={<Education />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/projects" element={<Projects />} />
+          <Route path="/project/:id" element={<ProjectDetails />} />
         </Routes>
       )}
     </>
