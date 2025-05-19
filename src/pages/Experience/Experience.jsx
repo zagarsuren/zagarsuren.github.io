@@ -56,7 +56,7 @@ const ExperienceSection = () => {
     {
       icon: Network,
       title: "Data Scientist",
-      company: "Fiverr",
+      company: "Company 1",
       period: "2019 - 2020",
       description:
         "Worked on developing and customizing WordPress websites for clients globally.",
