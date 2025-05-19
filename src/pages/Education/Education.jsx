@@ -15,7 +15,7 @@ const EducationSection = () => {
 
   const educationData = [
     {
-      degree: "Master of AI, sub-major in Computer Vision",
+      degree: "Master of AI",
       school: "University of Technology Sydney (UTS)",
       mascot: "📘",
       year: "2023-2025",
