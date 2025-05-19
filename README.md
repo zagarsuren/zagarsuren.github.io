@@ -29,6 +29,9 @@ This project uses [`gh-pages`](https://www.npmjs.com/package/gh-pages) for manua
 
 ```bash
 npm run deploy
+git add .
+git commit -m "Deploy from main"
+git push origin main         
 ```
 
 This will:
