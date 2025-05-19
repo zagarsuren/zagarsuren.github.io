@@ -19,7 +19,7 @@ const EducationSection = () => {
       school: "University of Technology Sydney (UTS)",
       mascot: "📘",
       year: "2023-2025",
-      achievements: ["GPA: 4.89", "Subject: AI"],
+      achievements: ["GPA: 4.89", "Subject: AI, Computer Vision"],
       skills: ["Computer Vision", "Image Processing", "Deep Learning", "AI"],
       description:
         "Focused on core AI subjects with emphasis on practical laboratory work and scientific research methodologies.",
