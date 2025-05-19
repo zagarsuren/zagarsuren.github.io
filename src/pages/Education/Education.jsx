@@ -25,12 +25,12 @@ const EducationSection = () => {
         "Focused on core science subjects with emphasis on practical laboratory work and scientific research methodologies.",
     },
     {
-      degree: "Higher Secondary Certificate (HSC)",
-      school: "Dottopara Model Degree College",
+      degree: "Bachelor of Statistics",
+      school: "National University of Mongolia",
       mascot: "📗",
-      year: "2021-2023",
-      achievements: ["GPA: 4.25", "Subject: Arts"],
-      skills: ["Literature", "Social Studies", "Economics", "History"],
+      year: "2008-2012",
+      achievements: ["GPA: 4.25", "Subject: Statistics"],
+      skills: ["Economics", "Statistics", "Econometrics", "Data Analysis"],
       description:
         "Developed strong analytical and critical thinking skills through comprehensive study of humanities and social sciences.",
     },
