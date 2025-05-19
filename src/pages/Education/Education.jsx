@@ -15,24 +15,24 @@ const EducationSection = () => {
 
   const educationData = [
     {
-      degree: "UTS",
-      school: "Natore Textile Institute",
+      degree: "Master of AI, sub-major in Computer Vision",
+      school: "University of Technology Sydney (UTS)",
       mascot: "📘",
-      year: "2019-2021",
-      achievements: ["GPA: 4.89", "Subject: Science"],
-      skills: ["Mathematics", "Physics", "Chemistry", "Biology"],
+      year: "2023-2025",
+      achievements: ["GPA: 4.89", "Subject: AI, Computer Vision"],
+      skills: ["Computer Vision", "Image Processing", "Deep Learning", "AI"],
       description:
-        "Focused on core science subjects with emphasis on practical laboratory work and scientific research methodologies.",
+        "Focused on core AI subjects with emphasis on practical laboratory work and scientific research methodologies.",
     },
     {
-      degree: "Higher Secondary Certificate (HSC)",
-      school: "Dottopara Model Degree College",
+      degree: "Bachelor of Statistics",
+      school: "National University of Mongolia",
       mascot: "📗",
-      year: "2021-2023",
-      achievements: ["GPA: 4.25", "Subject: Arts"],
-      skills: ["Literature", "Social Studies", "Economics", "History"],
+      year: "2008-2012",
+      achievements: ["GPA: 4.25", "Subject: Statistics"],
+      skills: ["Economics", "Statistics", "Econometrics", "Data Analysis"],
       description:
-        "Developed strong analytical and critical thinking skills through comprehensive study of humanities and social sciences.",
+        "Developed strong analytical and critical thinking skills through comprehensive study of statistics.",
     },
   ];
 
