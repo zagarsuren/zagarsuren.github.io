@@ -34,5 +34,5 @@ jobs:
           git add .
           git commit -m "Automated deploy"
           git branch -M main
-          git remote add origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}
+          git remote add origin https://x-access-token:${{ secrets.PERSONAL_TOKEN }}@github.com/${{ github.repository }}
           git push --force origin main
