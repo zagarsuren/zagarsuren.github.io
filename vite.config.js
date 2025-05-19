@@ -3,7 +3,17 @@ import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
 
 export default defineConfig({
-  plugins: [react()],
+  plugins: [
+    react(),
+    viteStaticCopy({
+      targets: [
+        {
+          src: path.resolve(__dirname, 'public/404.html'),
+          dest: '.', // Copy directly into dist/
+        }
+      ]
+    })
+  ],
   base: "/",
   resolve: {
     alias: {
