@@ -5,7 +5,7 @@ import PropTypes from "prop-types";
 
 const projects = [
   {
-    title: "Olova! A Lightweight JavaScript Library",
+    title: "Project 1",
     description:
       "A lightweight JavaScript library for creating beautiful, responsive UI components.",
     src: "rock.jpg",
@@ -15,7 +15,7 @@ const projects = [
     liveLink: "#",
   },
   {
-    title: "React and Tailwind CSS ",
+    title: "Project 2",
     description:
       "A sleek portfolio built with React and Tailwind CSS to showcase your skills, projects, and experience in a modern design.",
     src: "tree.jpg",
