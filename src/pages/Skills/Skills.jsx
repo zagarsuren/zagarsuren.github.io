@@ -26,6 +26,11 @@ import {
   SiFirebase,
   SiVercel,
   SiVite,
+  SiNumpy,
+  SiPandas,
+  SiTensorflow,
+  SiPytorch,
+  SiScikitlearn,
 } from "react-icons/si";
 import { TbBrandVscode } from "react-icons/tb";
 import { BsFileEarmarkCode, BsGrid1X2 } from "react-icons/bs";
@@ -166,46 +171,46 @@ const SkillsSection = () => {
     },
     {
       icon: Cpu,
-      title: "Tools & Technologies",
+      title: "Data Science & ML",
       color: "text-pink-400",
       skills: [
         {
           name: "VS Code",
           icon: <TbBrandVscode className="w-4 h-4 text-[#007ACC]" />,
         },
-        { name: "Jest", icon: <SiJest className="w-4 h-4 text-[#C21325]" /> },
+        { name: "NumPy", icon: <SiNumpy className="w-4 h-4 text-[#C21325]" /> },
         {
-          name: "Webpack",
-          icon: <SiWebpack className="w-4 h-4 text-[#8DD6F9]" />,
+          name: "Pandas",
+          icon: <SiPandas className="w-4 h-4 text-[#8DD6F9]" />,
         },
-        { name: "Redux", icon: <SiRedux className="w-4 h-4 text-[#764ABC]" /> },
+        { name: "Scikitlearn", icon: <SiScikitlearn className="w-4 h-4 text-[#646CFF]" /> },
+        { name: "PyTorch", icon: <SiPytorch className="w-4 h-4 text-[#764ABC]" /> },
         {
-          name: "Firebase",
-          icon: <SiFirebase className="w-4 h-4 text-[#FFCA28]" />,
+          name: "TensorFlow",
+          icon: <SiTensorflow className="w-4 h-4 text-[#FFCA28]" />,
         },
-        { name: "Vercel", icon: <SiVercel className="w-4 h-4 text-white" /> },
-        { name: "Vite", icon: <SiVite className="w-4 h-4 text-[#646CFF]" /> },
+        { name: "ClearML", icon: <SiVercel className="w-4 h-4 text-white" /> },
       ],
     },
     {
       icon: Paintbrush,
-      title: "Creative Skills",
+      title: "Soft Skills",
       color: "text-yellow-400",
       skills: [
         {
-          name: "UI Animation",
+          name: "Problem Solving",
           icon: <MdAnimation className="w-4 h-4 text-[#FF4081]" />,
         },
         {
-          name: "SVG Animation",
+          name: "Communication",
           icon: <MdAnimation className="w-4 h-4 text-[#00C853]" />,
         },
         {
-          name: "3D Modeling",
+          name: "Agile/Scrum",
           icon: <Cpu className="w-4 h-4 text-[#7C4DFF]" />,
         },
         {
-          name: "Motion Graphics",
+          name: "Collaboration",
           icon: <MdAnimation className="w-4 h-4 text-[#FF6D00]" />,
         },
       ],

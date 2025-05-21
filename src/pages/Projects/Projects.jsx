@@ -6,7 +6,7 @@ import { Link } from "react-router-dom"; // ✅ for routing
 
 const projects = [
   {
-    title: "Project 1",
+    title: "🚀 DeployForce - Sprint 3",
     description:
       "A lightweight JavaScript library for creating beautiful, responsive UI components.",
     link: "https://i.postimg.cc/DwgWTfP0/Annotation-2025-03-19-113338.png",
@@ -16,7 +16,7 @@ const projects = [
     id: 1,
   },
   {
-    title: "Project 2",
+    title: "🚀 DeployForce - Sprint 2",
     description:
       "A sleek portfolio built with React and Tailwind CSS to showcase your skills, projects, and experience in a modern design.",
     link: "#",
@@ -26,7 +26,7 @@ const projects = [
     id: 2,
   },
   {
-    title: "🚀 CodeWhisperer",
+    title: "🚀 DeployForce - Sprint 1",
     description:
       "A powerful online code editor built with React and Tailwind CSS. Featuring real-time code execution, syntax highlighting, multi-language support, and a sleek UI.",
     link: "https://i.postimg.cc/J4jPVFY0/Annotation-2025-04-01-204723.png",
@@ -36,15 +36,35 @@ const projects = [
     id: 3,
   },
   {
-    title: "CodeKori 🔥",
+    title: "VisionAid-VQA",
     description:
-      "CodeKori is a powerful online code editor built with React and Tailwind CSS. Featuring real-time code execution, syntax highlighting, and multi-language support.",
+      "Inclusive Visual Question Answering Using Deep Learning and Multimodal Attention Mechanisms.",
     link: "https://i.postimg.cc/cHQr4fpR/Annotation-2025-04-01-205350.png",
     color: "#ed649e",
-    githubLink: "#",
+    githubLink: "https://github.com/zagarsuren/visionaid-vqa",
     liveLink: "#",
     id: 4,
   },
+  {
+    title: "Chest Xray Classification",
+    description:
+      "A Streamlit-powered web application that classifies chest X-ray images using state-of-the-art deep learning models. The system supports multiple backbone architectures and ensemble predictions for robust diagnosis across five major thoracic conditions.",
+    link: "https://i.postimg.cc/cHQr4fpR/Annotation-2025-04-01-205350.png",
+    color: "#ed649e",
+    githubLink: "https://github.com/zagarsuren/chest-xray-app",
+    liveLink: "#",
+    id: 5,
+  },
+  {
+    title: "HerdWatch - UTS AI Showcase 2024",
+    description:
+      "This project aims to develop a system for livestock counting and behaviour detection using computer vision algorithms. The proposed system utilises state-of-the-art deep learning techniques to process images or video footage captured from surveillance cameras installed in livestock facilities or drones.",
+    link: "https://i.postimg.cc/cHQr4fpR/Annotation-2025-04-01-205350.png",
+    color: "#ed649e",
+    githubLink: "https://github.com/zagarsuren/uts-ai-showcase-herdwatch",
+    liveLink: "https://www.youtube.com/watch?v=E_jsOMbI-yE",
+    id: 6,
+  },  
 ];
 
 export default function Projects() {
