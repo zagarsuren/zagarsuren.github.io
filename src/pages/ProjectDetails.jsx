@@ -5,9 +5,18 @@ import { ArrowLeft } from "lucide-react";
 import { Light as SyntaxHighlighter } from "react-syntax-highlighter";
 import { atomOneDark } from "react-syntax-highlighter/dist/esm/styles/hljs";
 
-// Optional: register languages (Python in your case)
+// register your language(s)
 import python from "react-syntax-highlighter/dist/esm/languages/hljs/python";
 SyntaxHighlighter.registerLanguage("python", python);
+
+// ✂️ Remove the theme’s bg by cloning & zeroing it out
+const transparentAtomOneDark = {
+  ...atomOneDark,
+  hljs: {
+    ...atomOneDark.hljs,
+    background: "transparent",
+  },
+};
 
 export default function ProjectDetails() {
   const { id } = useParams();
@@ -36,35 +45,43 @@ export default function ProjectDetails() {
             components={{
               code({ node, inline, className, children, ...props }) {
                 const match = /language-(\w+)/.exec(className || "");
-                return !inline && match ? (
-                  <div className="my-6 overflow-x-auto rounded-lg bg-zinc-900 text-sm">
-                    <SyntaxHighlighter
-                      language={match[1]}
-                      style={atomOneDark}
-                      showLineNumbers={false}
-                      wrapLines={false}
-                      wrapLongLines={false}
-                      customStyle={{
-                        background: "transparent",
-                        padding: "1.25rem",
-                        fontSize: "0.9rem",
-                        lineHeight: "1.6",
-                        borderRadius: "0.5rem",
-                        overflowX: "auto",
-                      }}
-                      lineProps={(lineNumber) => ({
-                        style: {
-                          borderLeft: "none", // 🔥 this removes the vertical line
-                          backgroundColor: "transparent", // ensures no background highlight
-                        },
-                      })}
-                      PreTag="div"
-                      {...props}
-                    >
-                      {String(children).replace(/\n$/, "")}
-                    </SyntaxHighlighter>
-                  </div>
-                ) : (
+                // only syntax-highlight non-inline code blocks
+                if (!inline && match) {
+                  return (
+                    <div className="my-6 overflow-x-auto rounded-lg bg-zinc-900 text-sm">
+                      <SyntaxHighlighter
+                        language={match[1]}
+                        style={transparentAtomOneDark}        // use transparent theme
+                        showLineNumbers={false}
+                        wrapLines={false}
+                        wrapLongLines={false}
+                        PreTag="div"
+                        customStyle={{
+                          backgroundColor: "transparent",     // ensure no bg
+                          padding: "1.0rem",
+                          fontSize: "1.0rem",
+                          lineHeight: "1.5",
+                          borderRadius: "0.5rem",
+                          overflowX: "auto",
+                        }}
+                        codeTagProps={{
+                          style: { backgroundColor: "transparent" },
+                        }}
+                        lineProps={{
+                          style: {
+                            backgroundColor: "transparent",   // no per-line bg
+                            borderLeft: "none",                // no line gutter
+                          },
+                        }}
+                        {...props}
+                      >
+                        {String(children).replace(/\n$/, "")}
+                      </SyntaxHighlighter>
+                    </div>
+                  );
+                }
+                // fallback for inline code
+                return (
                   <code className="bg-zinc-800 text-pink-300 px-1 py-0.5 rounded">
                     {children}
                   </code>
