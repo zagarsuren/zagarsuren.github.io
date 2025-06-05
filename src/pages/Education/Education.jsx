@@ -33,7 +33,7 @@ const EducationSection = () => {
       skills: ["Economics", "Statistics", "Econometrics", "Data Analysis"],
       description:
         "Developed strong analytical and critical thinking skills through comprehensive study of statistics.",
-    },
+    }
   ];
 
   const containerVariants = {
@@ -74,7 +74,7 @@ const EducationSection = () => {
           transition={{ duration: 0.6 }}
           className="text-center mb-16"
         >
-          <h2 className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-teal-400 to-blue-500 bg-clip-text text-transparent mb-6">
+          <h2 className="text-5xl md:text-7xl font-bold bg-gradient-to-r from-teal-400 to-blue-500 bg-clip-text text-transparent mb-6">
             Educational Journey
           </h2>
           <p className="text-gray-300 max-w-2xl mx-auto text-lg">

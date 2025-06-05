@@ -1,14 +1,13 @@
 import HeroImg from "@/assets/images/hero.jpg";
-import OlovaLogo from "@/assets/images/olova.png";
 
 export default function About() {
   return (
     <>
       <section id="about" className="py-16 md:py-32  text-white bg-[#04081A]">
         <div className="mx-auto max-w-5xl space-y-8 px-6 md:space-y-16">
-          <h2 className="relative z-10 max-w-xl text-4xl font-medium lg:text-5xl text-white">
+          {/*<h2 className="relative z-10 max-w-xl text-4xl font-medium lg:text-5xl text-white">
             Data Scientist, ML Engineer, AI Developer
-          </h2>
+          </h2>*/}
           <div className="grid gap-6 sm:grid-cols-2 md:gap-12 lg:gap-24">
             <div className="relative mb-6 sm:mb-0">
               <div className="bg-linear-to-b aspect-76/59 relative rounded-2xl p-px from-zinc-300 to-transparent">
@@ -35,7 +34,7 @@ export default function About() {
               </p>
 
               <div className="pt-6">
-                <blockquote className="border-l-4 border-gray-300 pl-4">
+                {/*<blockquote className="border-l-4 border-gray-300 pl-4">
                   <p className="text-white">
                     I'm passionate about bridging technology and social good — and always open to collaborations that challenge the status quo. 
                   </p>
@@ -44,7 +43,7 @@ export default function About() {
                     <cite className="block font-medium text-white">
                       Zagarsuren Sukhbaatar
                     </cite>
-                    {/*
+                    
                     <div className="flex items-center gap-2">
                       <img
                         className="h-5 w-fit"
@@ -55,9 +54,9 @@ export default function About() {
                       />
                       <span className="text-white">DS</span> 
                     </div>
-                    */}
+                    
                   </div>
-                </blockquote>
+                </blockquote>*/}
               </div>
             </div>
           </div>

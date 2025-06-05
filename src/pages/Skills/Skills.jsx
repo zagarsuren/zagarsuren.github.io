@@ -2,7 +2,15 @@ import React from "react";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import IconCloudDemo from "@/components/globe";
-import { Code2, Paintbrush, Database, Layout, Cpu, Cloud } from "lucide-react";
+import {
+  Code2,
+  Paintbrush,
+  Database,
+  Layout,
+  Cpu,
+  Cloud,
+  Handshake,
+} from "lucide-react";
 import {
   FaReact,
   FaNodeJs,
@@ -37,14 +45,18 @@ import { BsFileEarmarkCode, BsGrid1X2 } from "react-icons/bs";
 import { MdAnimation } from "react-icons/md";
 import { FcWorkflow } from "react-icons/fc";
 
+// Swiper
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Navigation } from "swiper/modules";
+import "swiper/css";
+import "swiper/css/navigation";
+
 const SkillCard = ({ icon: Icon, title, skills, color }) => (
   <Card className="group relative overflow-hidden bg-gray-900/80 border-gray-700 hover:scale-[1.02] transition-all duration-300 hover:shadow-xl hover:shadow-blue-500/20">
     <div className="absolute inset-0 bg-gradient-to-r from-transparent via-[rgba(100,100,255,0.1)] to-transparent group-hover:via-[rgba(100,100,255,0.2)] animate-shimmer"></div>
     <CardContent className="p-6 relative z-10">
       <div className="flex items-center gap-4 mb-6">
-        <div
-          className={`p-3 rounded-xl bg-gray-800/50 ${color} group-hover:scale-110 transition-transform duration-300`}
-        >
+        <div className={`p-3 rounded-xl bg-gray-800/50 ${color} group-hover:scale-110 transition-transform duration-300`}>
           <Icon className="w-8 h-8" />
         </div>
         <h3 className="text-2xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-white to-gray-400">
@@ -77,26 +89,11 @@ const SkillsSection = () => {
       color: "text-blue-400",
       skills: [
         { name: "React", icon: <FaReact className="w-4 h-4 text-[#61DAFB]" /> },
-        {
-          name: "Next.js",
-          icon: <SiNextdotjs className="w-4 h-4 text-white" />,
-        },
-        {
-          name: "TypeScript",
-          icon: <SiTypescript className="w-4 h-4 text-[#3178C6]" />,
-        },
-        {
-          name: "Tailwind CSS",
-          icon: <SiTailwindcss className="w-4 h-4 text-[#38B2AC]" />,
-        },
-        {
-          name: "HTML5",
-          icon: <BsFileEarmarkCode className="w-4 h-4 text-[#E34F26]" />,
-        },
-        {
-          name: "CSS3",
-          icon: <BsFileEarmarkCode className="w-4 h-4 text-[#1572B6]" />,
-        },
+        { name: "Next.js", icon: <SiNextdotjs className="w-4 h-4 text-white" /> },
+        { name: "TypeScript", icon: <SiTypescript className="w-4 h-4 text-[#3178C6]" /> },
+        { name: "Tailwind CSS", icon: <SiTailwindcss className="w-4 h-4 text-[#38B2AC]" /> },
+        { name: "HTML5", icon: <BsFileEarmarkCode className="w-4 h-4 text-[#E34F26]" /> },
+        { name: "CSS3", icon: <BsFileEarmarkCode className="w-4 h-4 text-[#1572B6]" /> },
       ],
     },
     {
@@ -104,30 +101,12 @@ const SkillsSection = () => {
       title: "Backend Development",
       color: "text-green-400",
       skills: [
-        {
-          name: "Node.js",
-          icon: <FaNodeJs className="w-4 h-4 text-[#339933]" />,
-        },
-        {
-          name: "Python",
-          icon: <FaPython className="w-4 h-4 text-[#3776AB]" />,
-        },
-        {
-          name: "PostgreSQL",
-          icon: <SiPostgresql className="w-4 h-4 text-[#336791]" />,
-        },
-        {
-          name: "MongoDB",
-          icon: <SiMongodb className="w-4 h-4 text-[#47A248]" />,
-        },
-        {
-          name: "REST APIs",
-          icon: <BsGrid1X2 className="w-4 h-4 text-[#FF6C37]" />,
-        },
-        {
-          name: "GraphQL",
-          icon: <SiGraphql className="w-4 h-4 text-[#E10098]" />,
-        },
+        { name: "Node.js", icon: <FaNodeJs className="w-4 h-4 text-[#339933]" /> },
+        { name: "Python", icon: <FaPython className="w-4 h-4 text-[#3776AB]" /> },
+        { name: "PostgreSQL", icon: <SiPostgresql className="w-4 h-4 text-[#336791]" /> },
+        { name: "MongoDB", icon: <SiMongodb className="w-4 h-4 text-[#47A248]" /> },
+        { name: "REST APIs", icon: <BsGrid1X2 className="w-4 h-4 text-[#FF6C37]" /> },
+        { name: "GraphQL", icon: <SiGraphql className="w-4 h-4 text-[#E10098]" /> },
       ],
     },
     {
@@ -136,18 +115,9 @@ const SkillsSection = () => {
       color: "text-purple-400",
       skills: [
         { name: "Figma", icon: <FaFigma className="w-4 h-4 text-[#F24E1E]" /> },
-        {
-          name: "Responsive Design",
-          icon: <Layout className="w-4 h-4 text-[#38B2AC]" />,
-        },
-        {
-          name: "Wireframing",
-          icon: <BsGrid1X2 className="w-4 h-4 text-[#9CA3AF]" />,
-        },
-        {
-          name: "Prototyping",
-          icon: <MdAnimation className="w-4 h-4 text-[#F59E0B]" />,
-        },
+        { name: "Responsive Design", icon: <Layout className="w-4 h-4 text-[#38B2AC]" /> },
+        { name: "Wireframing", icon: <BsGrid1X2 className="w-4 h-4 text-[#9CA3AF]" /> },
+        { name: "Prototyping", icon: <MdAnimation className="w-4 h-4 text-[#F59E0B]" /> },
       ],
     },
     {
@@ -156,15 +126,9 @@ const SkillsSection = () => {
       color: "text-orange-400",
       skills: [
         { name: "AWS", icon: <FaAws className="w-4 h-4 text-[#FF9900]" /> },
-        {
-          name: "Docker",
-          icon: <FaDocker className="w-4 h-4 text-[#2496ED]" />,
-        },
+        { name: "Docker", icon: <FaDocker className="w-4 h-4 text-[#2496ED]" /> },
         { name: "CI/CD", icon: <FcWorkflow className="w-4 h-4" /> },
-        {
-          name: "Kubernetes",
-          icon: <BsGrid1X2 className="w-4 h-4 text-[#326CE5]" />,
-        },
+        { name: "Kubernetes", icon: <BsGrid1X2 className="w-4 h-4 text-[#326CE5]" /> },
         { name: "Git", icon: <FaGitAlt className="w-4 h-4 text-[#F05032]" /> },
         { name: "Linux", icon: <FaLinux className="w-4 h-4 text-[#FCC624]" /> },
       ],
@@ -174,59 +138,80 @@ const SkillsSection = () => {
       title: "Data Science & ML",
       color: "text-pink-400",
       skills: [
-        {
-          name: "VS Code",
-          icon: <TbBrandVscode className="w-4 h-4 text-[#007ACC]" />,
-        },
+        { name: "VS Code", icon: <TbBrandVscode className="w-4 h-4 text-[#007ACC]" /> },
         { name: "NumPy", icon: <SiNumpy className="w-4 h-4 text-[#C21325]" /> },
-        {
-          name: "Pandas",
-          icon: <SiPandas className="w-4 h-4 text-[#8DD6F9]" />,
-        },
+        { name: "Pandas", icon: <SiPandas className="w-4 h-4 text-[#8DD6F9]" /> },
         { name: "Scikitlearn", icon: <SiScikitlearn className="w-4 h-4 text-[#646CFF]" /> },
         { name: "PyTorch", icon: <SiPytorch className="w-4 h-4 text-[#764ABC]" /> },
-        {
-          name: "TensorFlow",
-          icon: <SiTensorflow className="w-4 h-4 text-[#FFCA28]" />,
-        },
+        { name: "TensorFlow", icon: <SiTensorflow className="w-4 h-4 text-[#FFCA28]" /> },
         { name: "ClearML", icon: <SiVercel className="w-4 h-4 text-white" /> },
       ],
     },
     {
-      icon: Paintbrush,
+      icon: Handshake,
       title: "Soft Skills",
       color: "text-yellow-400",
       skills: [
-        {
-          name: "Problem Solving",
-          icon: <MdAnimation className="w-4 h-4 text-[#FF4081]" />,
-        },
-        {
-          name: "Communication",
-          icon: <MdAnimation className="w-4 h-4 text-[#00C853]" />,
-        },
-        {
-          name: "Agile/Scrum",
-          icon: <Cpu className="w-4 h-4 text-[#7C4DFF]" />,
-        },
-        {
-          name: "Collaboration",
-          icon: <MdAnimation className="w-4 h-4 text-[#FF6D00]" />,
-        },
+        { name: "Problem Solving", icon: <MdAnimation className="w-4 h-4 text-[#FF4081]" /> },
+        { name: "Communication", icon: <MdAnimation className="w-4 h-4 text-[#00C853]" /> },
+        { name: "Agile/Scrum", icon: <Cpu className="w-4 h-4 text-[#7C4DFF]" /> },
+        { name: "Collaboration", icon: <MdAnimation className="w-4 h-4 text-[#FF6D00]" /> },
       ],
+    },
+  ];
+
+  const certificates = [
+    {
+      title: "Data Science Professional",
+      issuer: "IBM | Coursera",
+      image: "/certs/IBM-DS.png",
+      link: "https://www.coursera.org/account/accomplishments/specialization/MMWJ68TWVYTW",
+    },
+    {
+      title: "Machine Learning AWS",
+      issuer: "Udacity",
+      image: "/certs/udacity.jpg",
+      link: "https://s3-us-west-2.amazonaws.com/udacity-printer/production/certificates/0aa1bb89-55d4-4281-b7d6-4551662227e4.pdf"
+    },
+    {
+      title: "Databricks Accredited Generative AI Fundamentals",
+      issuer: "Databricks",
+      image: "/certs/databricks.jpg",
+      link: "https://credentials.databricks.com/b5fe450e-9c6e-4587-9bbf-3d54760c6f7e#acc.rOYfxg7G"
+    },
+    {
+      title: "Generative AI",
+      issuer: "Cognizant | Sydney, Australia",
+      image: "/certs/GenAI.png",
+    },
+    {
+      title: "Computer Vision",
+      issuer: "Kaggle",
+      image: "/certs/Kaggle.jpg",
+      link: "https://www.kaggle.com/learn/certification/zagarsuren/computer-vision"
     },
   ];
 
   return (
     <main className="pt-15 lg:pt-0 text-white min-h-screen bg-[#04081A] relative">
-      {/* Grid Background */}
       <div className="absolute inset-0 bg-grid-pattern opacity-20 pointer-events-none"></div>
 
-      <section className="container mx-auto px-4 py-11 relative z-10">
-        <div className="flex justify-center items-center ">
-          <IconCloudDemo />
+      <section className="container mx-auto px-8 py-11 relative z-10">
+
+        {/* Section header with enhanced effects */}
+        <div className="flex flex-col items-center space-y-8 pt-16 mb-10">
+          <div className="relative">
+            <h2 className="text-3xl md:text-5xl font-black text-transparent bg-gradient-to-r from-teal-400 to-blue-500 bg-clip-text text-center">
+              Skills
+            </h2>
+            <div className="absolute inset-0 -z-10 bg-gradient-to-r from-cyan-500/20 to-purple-500/20 blur-3xl rounded-full" />
+          </div>
+          <p className="text-lg md:text-xl text-gray-400 font-medium tracking-wide text-center max-w-2xl">
+            A showcase of my technical expertise and diverse skill set across various domains
+          </p>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
           {skillCategories.map((category, index) => (
             <SkillCard
               key={index}
@@ -237,7 +222,75 @@ const SkillsSection = () => {
             />
           ))}
         </div>
+
+        {/* Certificates Section */}
+        {/* Section header with enhanced effects */}
+        <div className="flex flex-col items-center space-y-8 pt-16 mb-10">
+          <div className="relative">
+            <h2 className="text-3xl md:text-5xl font-black text-transparent bg-gradient-to-r from-teal-400 to-blue-500 bg-clip-text text-center">
+              Certificates
+            </h2>
+            <div className="absolute inset-0 -z-10 bg-gradient-to-r from-cyan-500/20 to-purple-500/20 blur-3xl rounded-full" />
+          </div>
+          <p className="text-lg md:text-xl text-gray-400 font-medium tracking-wide text-center max-w-2xl">
+            Certifications that validate my expertise and commitment to continuous learning
+          </p>
+        </div>
+
+        <Swiper
+          modules={[Navigation]}
+          navigation
+          spaceBetween={20}
+          slidesPerView={1}
+          breakpoints={{
+            640: { slidesPerView: 1 },
+            768: { slidesPerView: 2 },
+            1024: { slidesPerView: 3 },
+          }}
+          className="pb-12"
+        >
+          {certificates.map((cert, index) => (
+            <SwiperSlide key={index}>
+              <a
+                href={cert.link}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block bg-gray-900/80 border border-gray-700 rounded-xl overflow-hidden shadow-lg transition-transform duration-300 hover:scale-105"
+              >
+                <img
+                  src={cert.image}
+                  alt={cert.title}
+                  className="w-full h-80 object-cover"
+                />
+                <div className="p-4">
+                  <h3 className="text-xl font-semibold text-white mb-1">
+                    {cert.title}
+                  </h3>
+                  <p className="text-gray-400 text-sm">{cert.issuer}</p>
+                </div>
+              </a>
+            </SwiperSlide>
+          ))}
+        </Swiper>
+
+        {/* Section header with enhanced effects */}
+        <div className="flex flex-col items-center space-y-8 pt-16 mb-10">
+          <div className="relative">
+            <h2 className="text-3xl md:text-5xl font-black text-transparent bg-gradient-to-r from-teal-400 to-blue-500 bg-clip-text text-center">
+              Tech Stack
+            </h2>
+            <div className="absolute inset-0 -z-10 bg-gradient-to-r from-cyan-500/20 to-purple-500/20 blur-3xl rounded-full" />
+          </div>
+          <p className="text-lg md:text-xl text-gray-400 font-medium tracking-wide text-center max-w-2xl">
+            A collection of tools and technologies that power my projects and solutions
+          </p>
+        </div>
+
+        <div className="flex justify-center items-center">
+          <IconCloudDemo />
+        </div>
       </section>
+
       <style jsx>{`
         @keyframes shimmer {
           0% {

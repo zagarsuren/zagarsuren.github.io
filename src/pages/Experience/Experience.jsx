@@ -76,7 +76,7 @@ const ExperienceSection = () => {
       period: "2023 - Present",
       description:
         "Contributed to developing JavaScript libraries and enhancing framework functionalities.",
-    },
+    }
   ];
 
   return (

@@ -1,67 +1,49 @@
 "use client";
+
 import { useEffect, useMemo, useState } from "react";
 import { useTheme } from "next-themes";
-import { Cloud, fetchSimpleIcons, renderSimpleIcon } from "react-icon-cloud";
+import { fetchSimpleIcons, renderSimpleIcon } from "react-icon-cloud";
 
-export const cloudProps = {
-  containerProps: {
-    style: {
-      display: "flex",
-      justifyContent: "center",
-      alignItems: "center",
-      width: "100%",
-      paddingTop: 40,
-    },
-  },
-  options: {
-    reverse: true,
-    depth: 1,
-    wheelZoom: false,
-    imageScale: 2,
-    activeCursor: "default",
-    tooltip: "native",
-    initial: [0.1, -0.1],
-    clickToFront: 500,
-    tooltipDelay: 0,
-    outlineColour: "#000",
-    maxSpeed: 0.04,
-    minSpeed: 0.02,
-    // dragControl: false,
-  },
-};
-
-export const renderCustomIcon = (icon, theme, imageArray) => {
+// Custom icon renderer with adjustable size
+export const renderCustomIcon = (icon, theme, size = 64) => {
   const bgHex = theme === "light" ? "#f3f2ef" : "#080510";
   const fallbackHex = theme === "light" ? "#6e6e73" : "#ffffff";
   const minContrastRatio = theme === "dark" ? 2 : 1.2;
 
-  return renderSimpleIcon({
-    icon,
-    bgHex,
-    fallbackHex,
-    minContrastRatio,
-    size: 42,
-    aProps: {
-      href: undefined,
-      target: undefined,
-      rel: undefined,
-      onClick: (e) => e.preventDefault(),
-    },
-  });
+  return (
+    <div
+      key={icon.slug}
+      style={{ width: size, height: size }}
+      className="flex items-center justify-center"
+      title={icon.title}
+    >
+      {renderSimpleIcon({
+        icon,
+        bgHex,
+        fallbackHex,
+        minContrastRatio,
+        size: size * 0.7, // scale inner SVG slightly smaller than container
+        aProps: {
+          href: undefined,
+          target: undefined,
+          rel: undefined,
+          onClick: (e) => e.preventDefault(),
+        },
+      })}
+    </div>
+  );
 };
 
 export default function IconCloud({
-  // Default to an empty array if not provided
-  iconSlugs = [],
-
-  imageArray,
+  iconSlugs = [],        // array of simple-icon slugs
+  imageArray = [],       // array of image URLs
+  size = 64,             // icon size in pixels
 }) {
   const [data, setData] = useState(null);
   const { theme } = useTheme();
 
   useEffect(() => {
     if (iconSlugs.length > 0) {
-      // Check if iconSlugs is not empty
       fetchSimpleIcons({ slugs: iconSlugs }).then(setData);
     }
   }, [iconSlugs]);
@@ -70,25 +52,32 @@ export default function IconCloud({
     if (!data) return null;
 
     return Object.values(data.simpleIcons).map((icon) =>
-      renderCustomIcon(icon, theme || "dark")
+      renderCustomIcon(icon, theme || "dark", size)
     );
-  }, [data, theme]);
+  }, [data, theme, size]);
 
   return (
-    // @ts-ignore
-    <Cloud {...cloudProps}>
-      <>
-        <>{renderedIcons}</>
-        {imageArray &&
-          imageArray.length > 0 &&
-          imageArray.map((image, index) => {
-            return (
-              <a key={index} href="#" onClick={(e) => e.preventDefault()}>
-                <img height="42" width="42" alt="A globe" src={image} />
-              </a>
-            );
-          })}
-      </>
-    </Cloud>
+    <div className="w-full py-8 px-4">
+      <div className="grid grid-cols-4 sm:grid-cols-6 md:grid-cols-8 lg:grid-cols-10 gap-6 justify-items-center">
+        {renderedIcons}
+
+        {imageArray.length > 0 &&
+          imageArray.map((image, index) => (
+            <div
+              key={`img-${index}`}
+              className="flex items-center justify-center"
+              style={{ width: size, height: size }}
+            >
+              <img
+                src={image}
+                alt={`icon-${index}`}
+                height={size}
+                width={size}
+                className="object-contain"
+              />
+            </div>
+          ))}
+      </div>
+    </div>
   );
 }
