@@ -70,6 +70,10 @@ project_root/
 
 ![img](https://github.com/zagarsuren/chest-xray-app/blob/main/assets/ss1.jpeg?raw=true)
 
+## Demo
+<iframe width="750" height="500" src="https://www.youtube.com/embed/e93Gh2Yy7sc" 
+frameborder="0" allowfullscreen></iframe>
+
 
 ## 🧑‍⚕️ Medical Disclaimer
 
