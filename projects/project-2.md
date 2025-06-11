@@ -34,7 +34,20 @@ This system allows users to upload or capture an image, ask a question about it,
 - 🔊 Converts text answers to speech using `gTTS`
 - 🎧 Auto-plays audio response in the app
 
-## 🧠 Model Weights
+## High Level Design
+![img](https://i.imgur.com/5StHHvp.jpeg)
+
+## 🧠 Models
+
+1) Vision Language Transformer (ViLT)
+
+![img](https://i.imgur.com/lfZ68DA.jpeg)
+
+2) Florence-2
+
+![img](https://i.imgur.com/iTxz7OZ.jpeg)
+
+**Model weights:**
 
 - `ViLT` → `/models/vilt_finetuned_vizwiz`. ViLT model weight can be found at: [https://huggingface.co/Zagarsuren/vilt-finetuned-vizwiz](https://huggingface.co/Zagarsuren/vilt-finetuned-vizwiz)
 - `Florence2Model` → `/models/florence2-finetuned` Florence-2 model weight can be found at: [https://huggingface.co/Zagarsuren/florence2-finetuned-vizwiz](https://huggingface.co/Zagarsuren/florence2-finetuned-vizwiz)
