@@ -7,7 +7,3 @@ Livestock management is crucial in agriculture, needing efficient methods for co
 ## Graphical User Interface
 ![img](https://i.imgur.com/DweXM3J.png)
 ![img](https://i.imgur.com/87ku0My.png)
-
-## Demo
-<iframe width="750" height="500" src="https://www.youtube.com/embed/E_jsOMbI-yE" 
-frameborder="0" allowfullscreen></iframe>
