@@ -59,7 +59,7 @@ const ExperienceSection = () => {
       company: "Company 3",
       period: "2019 - 2020",
       description:
-        "Worked on developing and customizing WordPress websites for clients globally.",
+        "Worked on developing and customizing ...",
     },
     {
       icon: Layers,
@@ -67,7 +67,7 @@ const ExperienceSection = () => {
       company: "Company 2",
       period: "2021 - 2023",
       description:
-        "Assisted in building and optimizing user interfaces with a focus on responsive and interactive designs.",
+        "Assisted in building and optimizing ...",
     },
     {
       icon: Code2,
@@ -75,7 +75,7 @@ const ExperienceSection = () => {
       company: "Company 1",
       period: "2023 - Present",
       description:
-        "Contributed to developing JavaScript libraries and enhancing framework functionalities.",
+        "Contributed to developing ...",
     }
   ];
 

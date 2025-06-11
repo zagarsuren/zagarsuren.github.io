@@ -32,7 +32,7 @@ const projects = [
     link: "https://i.imgur.com/guH3gk8.jpeg",
     color: "#ed649e",
     githubLink: "https://github.com/zagarsuren/chest-xray-app",
-    liveLink: "#",
+    liveLink: "https://www.youtube.com/watch?v=e93Gh2Yy7sc",
     id: 3,
   },
   {
@@ -41,8 +41,8 @@ const projects = [
       "Reinforcement learning-based stock trading agent that learns optimal trading strategies through simulation. The agent uses deep Q-learning to maximize returns by analyzing historical stock data and making buy/sell decisions.",
     link: "https://i.imgur.com/zWnE4KN.jpeg",
     color: "#8f89ff",
-    githubLink: "#",
-    liveLink: "#",
+    githubLink: "https://github.com/zagarsuren/trader_ai_app_dqnq",
+    liveLink: "https://www.youtube.com/watch?v=7R0psq1VRms",
     id: 4,
   },
   {

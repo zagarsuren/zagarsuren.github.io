@@ -5,7 +5,9 @@ import {
   Award,
   Calendar,
   BookOpen,
+  Book,
   GraduationCap,
+  Building,
   Trophy,
 } from "lucide-react";
 import { motion } from "framer-motion";
@@ -15,18 +17,20 @@ const EducationSection = () => {
 
   const educationData = [
     {
-      degree: "Master of AI",
-      school: "University of Technology Sydney (UTS)",
+      degree: "Master of Artificial Intelligence",
+      school: "University of Technology Sydney (UTS), Australia",
+      department: "School of Computer Science, FEIT",
       mascot: "📘",
       year: "2023-2025",
       achievements: ["GPA: 4.89", "Subject: AI, Computer Vision"],
-      skills: ["Computer Vision", "Image Processing", "Deep Learning", "AI"],
+      skills: ["Computer Vision", "Image Processing", "Deep Learning", "AI", "Reinforcement Learning", "Machine Learning", "Data Science & Analytics"],
       description:
         "Focused on core AI subjects with emphasis on practical laboratory work and scientific research methodologies.",
     },
     {
       degree: "Bachelor of Statistics",
       school: "National University of Mongolia",
+      department: "School of Economic Studies",
       mascot: "📗",
       year: "2008-2012",
       achievements: ["GPA: 4.25", "Subject: Statistics"],
@@ -110,8 +114,12 @@ const EducationSection = () => {
                     </h3>
                   </div>
                   <p className="text-lg text-gray-300 flex items-center gap-2">
-                    <BookOpen className="w-5 h-5 text-teal-500" />
+                    <Building className="w-5 h-5 text-teal-500" />
                     {edu.school}
+                  </p>
+                  <p className="text-lg text-gray-300 flex items-center gap-2">
+                    <BookOpen className="w-5 h-5 text-teal-500" />
+                    {edu.department}
                   </p>
                   <p className="text-gray-400 flex items-center gap-2">
                     <Calendar className="w-4 h-4" />
