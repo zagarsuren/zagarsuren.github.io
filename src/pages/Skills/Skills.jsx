@@ -201,12 +201,12 @@ const SkillsSection = () => {
         {/* Section header with enhanced effects */}
         <div className="flex flex-col items-center space-y-8 pt-16 mb-10">
           <div className="relative">
-            <h2 className="text-3xl md:text-5xl font-black text-transparent bg-gradient-to-r from-teal-400 to-blue-500 bg-clip-text text-center">
+            <h2 className="text-3xl md:text-5xl font-black text-transparent bg-gradient-to-r from-teal-400 to-blue-500 bg-clip-text text-center font-mono">
               Skills
             </h2>
             <div className="absolute inset-0 -z-10 bg-gradient-to-r from-cyan-500/20 to-purple-500/20 blur-3xl rounded-full" />
           </div>
-          <p className="text-lg md:text-xl text-gray-400 font-medium tracking-wide text-center max-w-2xl">
+          <p className="text-lg md:text-xl text-gray-400 font-medium tracking-wide text-center max-w-2xl font-mono">
             A showcase of my technical expertise and diverse skill set across various domains
           </p>
         </div>
@@ -227,12 +227,12 @@ const SkillsSection = () => {
         {/* Section header with enhanced effects */}
         <div className="flex flex-col items-center space-y-8 pt-16 mb-10">
           <div className="relative">
-            <h2 className="text-3xl md:text-5xl font-black text-transparent bg-gradient-to-r from-teal-400 to-blue-500 bg-clip-text text-center">
+            <h2 className="text-3xl md:text-5xl font-black text-transparent bg-gradient-to-r from-teal-400 to-blue-500 bg-clip-text text-center font-mono">
               Certificates
             </h2>
             <div className="absolute inset-0 -z-10 bg-gradient-to-r from-cyan-500/20 to-purple-500/20 blur-3xl rounded-full" />
           </div>
-          <p className="text-lg md:text-xl text-gray-400 font-medium tracking-wide text-center max-w-2xl">
+          <p className="text-lg md:text-xl text-gray-400 font-medium tracking-wide text-center max-w-2xl font-mono">
             Certifications that validate my expertise and commitment to continuous learning
           </p>
         </div>
@@ -276,12 +276,12 @@ const SkillsSection = () => {
         {/* Section header with enhanced effects */}
         <div className="flex flex-col items-center space-y-8 pt-16 mb-10">
           <div className="relative">
-            <h2 className="text-3xl md:text-5xl font-black text-transparent bg-gradient-to-r from-teal-400 to-blue-500 bg-clip-text text-center">
+            <h2 className="text-3xl md:text-5xl font-black text-transparent bg-gradient-to-r from-teal-400 to-blue-500 bg-clip-text text-center font-mono">
               Tech Stack
             </h2>
             <div className="absolute inset-0 -z-10 bg-gradient-to-r from-cyan-500/20 to-purple-500/20 blur-3xl rounded-full" />
           </div>
-          <p className="text-lg md:text-xl text-gray-400 font-medium tracking-wide text-center max-w-2xl">
+          <p className="text-lg md:text-xl text-gray-400 font-medium tracking-wide text-center max-w-2xl font-mono">
             A collection of tools and technologies that power my projects and solutions
           </p>
         </div>

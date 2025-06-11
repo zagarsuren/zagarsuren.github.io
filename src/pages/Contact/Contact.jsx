@@ -97,10 +97,10 @@ export default function Contact() {
             {/* Contact Info */}
             <div className="space-y-8">
               <div>
-                <h2 className="text-4xl font-bold mb-4 bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent">
+                <h2 className="text-4xl font-bold mb-4 bg-gradient-to-r from-blue-400 to-purple-500 bg-clip-text text-transparent font-mono">
                   Get in Touch
                 </h2>
-                <p className="text-gray-300 text-lg">
+                <p className="text-gray-300 text-lg font-mono">
                   Have a question or want to work together? Drop me a message!
                 </p>
               </div>
@@ -111,8 +111,8 @@ export default function Contact() {
                     <Mail className="w-6 h-6 text-purple-400" />
                   </div>
                   <div>
-                    <h3 className="font-semibold">Email</h3>
-                    <p className="text-gray-400">zagarsuren.sukhbaatar@student.uts.edu.au</p>
+                    <h3 className="font-semibold font-mono">Email</h3>
+                    <p className="text-gray-400 font-mono">zagarsuren.sukhbaatar@student.uts.edu.au</p>
                   </div>
                 </div>
 
@@ -121,8 +121,8 @@ export default function Contact() {
                     <MapPin className="w-6 h-6 text-pink-400" />
                   </div>
                   <div>
-                    <h3 className="font-semibold">Location</h3>
-                    <p className="text-gray-400">Sydney NSW, Australia</p>
+                    <h3 className="font-semibold font-mono">Location</h3>
+                    <p className="text-gray-400 font-mono">Sydney NSW, Australia</p>
                   </div>
                 </div>
               </div>

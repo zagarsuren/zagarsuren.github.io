@@ -7,6 +7,9 @@ module.exports = {
       animation: {
         meteor: "meteor 5s linear infinite",
       },
+      fontFamily: {
+        mono: ['"JetBrains Mono"', 'ui-monospace', 'SFMono-Regular', 'monospace'],
+      },      
       keyframes: {
         meteor: {
           "0%": {

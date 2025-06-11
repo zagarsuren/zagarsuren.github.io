@@ -8,6 +8,10 @@ import Hero from "./pages/Hero/Hero";
 import Skills from "./pages/Skills/Skills";
 import Education from "./pages/Education/Education";
 import ProjectDetails from "./pages/ProjectDetails";
+import '@fontsource/jetbrains-mono'; // Defaults to weight 400
+import '@fontsource/jetbrains-mono/400.css'; // Regular
+import '@fontsource/jetbrains-mono/700.css'; // Bold
+
 
 import { Route, Routes } from "react-router-dom";
 

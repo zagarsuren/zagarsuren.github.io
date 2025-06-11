@@ -4,6 +4,10 @@ import Meteors from "@/components/ui/meteors";
 import PortfolioPage from "@/pages/About/About";
 import SparklesText from "@/components/ui/sparkles-text";
 import { FlipWords } from "@/components/ui/flip-words";
+import '@fontsource/jetbrains-mono'; // Defaults to weight 400
+import '@fontsource/jetbrains-mono/400.css'; // Regular
+import '@fontsource/jetbrains-mono/700.css'; // Bold
+
 
 // Grid Background - Replacing the HexagonBackground
 const GridBackground = () => {
@@ -136,7 +140,7 @@ export default function Hero() {
             {/* Welcome badge */}
             <div className="inline-flex items-center gap-2 px-3 sm:px-4 py-2 rounded-full bg-gray-800/50 backdrop-blur-sm border border-gray-700/50 mb-6 sm:mb-8 animate__animated animate__fadeInDown animate__delay-1s">
               <div className="w-2 h-2 rounded-full bg-blue-400 animate-pulse"></div>
-              <span className="text-gray-300 text-xs sm:text-sm font-medium">
+              <span className="text-gray-300 text-xs sm:text-sm font-medium font-mono">
                 Welcome to my universe
               </span>
             </div>
@@ -147,7 +151,7 @@ export default function Hero() {
                 <SparklesText text="Hello" />
                 <span className="relative inline-block">
                   I&apos;m{" "}
-                  <span className="typing-effect gradient-text">
+                  <span className="typing-effect gradient-text font-mono">
                     Zagarsuren Sukhbaatar
                   </span>
                 </span>
@@ -167,8 +171,8 @@ export default function Hero() {
             </div>
 
             <div className="relative mb-8 sm:mb-12 max-w-xl">
-              <p className="text-base sm:text-xl text-gray-300/90 leading-relaxed">
-                Data Scientist 📊 ML Engineer 🤖 AI Developer 💻✨
+              <p className="text-base sm:text-xl text-gray-300/90 leading-relaxed font-mono">
+                Data Scientist | ML Engineer | AI Developer ✨
               </p>
             </div>
 
@@ -179,7 +183,7 @@ export default function Hero() {
                 className="group relative inline-flex items-center justify-center gap-3 bg-gradient-to-r from-blue-500 to-teal-400 p-0.5 rounded-xl transition-all duration-300 hover:scale-105 hover:shadow-[0_0_2rem_-0.5rem_#60A5FA]"
               >
                 <span className="block w-full px-6 sm:px-8 py-3 sm:py-4 rounded-[11px] bg-gray-900 transition-all duration-300 group-hover:bg-gradient-to-r group-hover:from-blue-500 group-hover:to-teal-400">
-                  <span className="relative flex items-center justify-center gap-2 text-white font-medium">
+                  <span className="relative flex items-center justify-center gap-2 text-white font-medium font-mono">
                     <span>Learn More</span>
                     <i className="fas fa-arrow-right transform transition-all duration-300 group-hover:translate-x-1"></i>
                   </span>
@@ -192,7 +196,7 @@ export default function Hero() {
                 className="group relative inline-flex items-center justify-center gap-3 p-0.5 rounded-xl bg-gradient-to-r from-gray-800 to-gray-700 transition-all duration-300 hover:scale-105 hover:shadow-[0_0_2rem_-0.5rem_#60A5FA]"
               >
                 <span className="block w-full px-6 sm:px-8 py-3 sm:py-4 rounded-[11px] bg-gray-900 border border-gray-700/50 transition-all duration-300 group-hover:bg-gradient-to-r group-hover:from-gray-800 group-hover:to-gray-700">
-                  <span className="relative flex items-center justify-center gap-2 text-gray-300 font-medium group-hover:text-white">
+                  <span className="relative flex items-center justify-center gap-2 text-gray-300 font-medium group-hover:text-white font-mono">
                     <span>Get Resume</span>
                     <i className="fas fa-envelope transform transition-all duration-300 group-hover:rotate-12"></i>
                   </span>
@@ -204,17 +208,17 @@ export default function Hero() {
 
           {/* Floating badges */}
           <div className="hidden lg:block absolute left-[5.5rem] top-[2.3rem] animate-float-slow">
-            <div className="px-4 py-2 rounded-lg bg-purple-500/10 backdrop-blur-sm border border-purple-500/20 text-purple-400">
+            <div className="px-4 py-2 rounded-lg bg-purple-500/10 backdrop-blur-sm border border-purple-500/20 text-purple-400 font-mono">
               <i className="fas fa-wand-magic-sparkles"></i>&nbsp;&nbsp;Data
             </div>
           </div>
           <div className="hidden lg:block absolute right-50 top-20 animate-float">
-            <div className="px-4 py-2 rounded-lg bg-blue-500/10 backdrop-blur-sm border border-blue-500/20 text-blue-400">
+            <div className="px-4 py-2 rounded-lg bg-blue-500/10 backdrop-blur-sm border border-blue-500/20 text-blue-400 font-mono">
               <i className="fas fa-code"></i>&nbsp;&nbsp;AI
             </div>
           </div>
           <div className="hidden lg:block absolute top-[17rem] left-[20%] transform -translate-x-1/2 animate-float">
-            <div className="px-4 py-2 rounded-lg bg-amber-500/10 backdrop-blur-sm border border-amber-500/20 text-amber-400">
+            <div className="px-4 py-2 rounded-lg bg-amber-500/10 backdrop-blur-sm border border-amber-500/20 text-amber-400 font-mono">
               <i className="fas fa-lightbulb"></i>&nbsp;&nbsp;Software
             </div>
           </div>
