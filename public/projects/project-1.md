@@ -21,3 +21,6 @@ AI can help overcome these challenges by automating and speeding up the process.
 ![img](https://i.imgur.com/aPcvgFC.jpeg)
 
 ![img](https://i.imgur.com/1h8Zbhz.jpeg)
+
+## ClearML Pipeline
+![img](https://i.imgur.com/YGsa554.jpeg)

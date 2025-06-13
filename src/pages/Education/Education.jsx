@@ -22,7 +22,7 @@ const EducationSection = () => {
       department: "School of Computer Science, FEIT",
       mascot: "📘",
       year: "2023-2025",
-      achievements: ["GPA: 4.89", "Subject: AI, Computer Vision"],
+      achievements: ["GPA: 4.89", "FEIT Dean's List 2024", "BUILD Leadership Program"],
       skills: ["Computer Vision", "Image Processing", "Deep Learning", "AI", "Reinforcement Learning", "Machine Learning", "Data Science & Analytics"],
       description:
         "Focused on core AI subjects with emphasis on practical laboratory work and scientific research methodologies.",
