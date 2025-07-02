@@ -1,5 +1,5 @@
 import React from "react";
-import { Code2, Activity, Cpu, Layers, Network, Binary } from "lucide-react";
+import { Binary, BrainCircuit, Cpu, Network, BriefcaseBusiness, ChartScatter} from "lucide-react";
 
 const ExperienceCard = ({
   title,
@@ -54,28 +54,52 @@ const ExperienceCard = ({
 const ExperienceSection = () => {
   const experiences = [
     {
+      icon: BriefcaseBusiness,
+      title: "Founder",
+      company: "Data School",
+      period: "2018 - Current",
+      description:
+        "Founded Data School with a mission to close the education gap and empower the Mongolian community by providing high-quality, accessible content in Data Science, AI, and digital skills. Contributed to the personal and professional growth of learners across Mongolia and Mongolians living or studying abroad, supporting career transitions and skills development in the data and AI fields.",
+    },
+    {
       icon: Network,
-      title: "Founder & CEO",
-      company: "Company 3",
-      period: "2019 - 2020",
+      title: "Board Member",
+      company: "Machine Learning Ulaanbaatar (MLUB)",
+      period: "2020 - Current",
       description:
-        "Worked on developing and customizing ...",
-    },
+        "Machine Learning UB (MLUB) is a community dedicated to promoting AI and machine learning education, collaboration, and innovation in Mongolia. As a non-profit initiative, MLUB organizes meetups, workshops, and national conferences that bring together data enthusiasts, researchers, and industry professionals to share knowledge and solve real-world problems through data science.",
+    },    
     {
-      icon: Layers,
+      icon: Cpu,
       title: "Data Science Manager",
-      company: "Company 2",
-      period: "2021 - 2023",
+      company: "Unitel Group",
+      period: "2019 - 2023",
       description:
-        "Assisted in building and optimizing ...",
+        "As a Data Science Manager at Mongolia's Biggest Information and Communications Technology company, I managed a cross-functional team in designing and deploying advanced analytics solutions, including credit scoring, network analysis, churn prediction, sentiment analysis, and time series forecasting, driving data-informed business strategies.",
     },
     {
-      icon: Code2,
+      icon: Binary,
       title: "Senior Data Analyst",
-      company: "Company 1",
-      period: "2023 - Present",
+      company: "Unitel Group",
+      period: "2018 - 2019",
       description:
-        "Contributed to developing ...",
+        "Led a team of data analysts across multiple projects, ensuring timely delivery of high-quality insights and models aligned with business objectives. Developed and deployed predictive models and scoring systems using diverse machine learning frameworks to enhance business intelligence and forecasting accuracy.",
+    },  
+    {
+      icon: BrainCircuit,
+      title: "Research Specialist / Senior Business Analyst",
+      company: "Unitel Group",
+      period: "2012 - 2016",
+      description:
+        "Collaborated cross-functionally to deliver data-driven insights that supported strategic planning, operational improvements, and customer engagement initiatives.",
+    },      
+    {
+      icon: ChartScatter,
+      title: "Business Analyst",
+      company: "Interconsulting Group",
+      period: "2011 - 2012",
+      description:
+        "Led and facilitated surveys and focus group studies across the automotive, cashmere, and dairy industries, enabling clients to gain deep understanding of consumer behavior and preferences for data-informed planning.",
     }
   ];
 
@@ -114,7 +138,7 @@ const ExperienceSection = () => {
               <div className="absolute inset-0 -z-10 bg-gradient-to-r from-cyan-500/20 to-purple-500/20 blur-3xl rounded-full" />
             </div>
             <p className="text-lg md:text-xl text-gray-400 font-medium tracking-wide text-center max-w-2xl font-mono">
-              "Transforming ideas into digital reality, one project at a time"
+              Fueled by curiosity, focused on AI — learning, building, and evolving.
             </p>
           </div>
 

@@ -20,6 +20,10 @@ import {
   FaLinux,
   FaFigma,
   FaAws,
+  FaGoogle,
+  FaMicrosoft,
+  FaFileExcel,
+  FaChartBar
 } from "react-icons/fa";
 import {
   SiNextdotjs,
@@ -39,6 +43,12 @@ import {
   SiTensorflow,
   SiPytorch,
   SiScikitlearn,
+  SiGooglecloud,
+  SiTableau,
+  SiOpenai,
+  SiOpenaigym,
+  SiOpencv,
+  SiLangchain
 } from "react-icons/si";
 import { TbBrandVscode } from "react-icons/tb";
 import { BsFileEarmarkCode, BsGrid1X2 } from "react-icons/bs";
@@ -83,20 +93,50 @@ const SkillCard = ({ icon: Icon, title, skills, color }) => (
 
 const SkillsSection = () => {
   const skillCategories = [
-    {
+    /*{
       icon: Code2,
       title: "Frontend Development",
       color: "text-blue-400",
       skills: [
         { name: "React", icon: <FaReact className="w-4 h-4 text-[#61DAFB]" /> },
         { name: "Next.js", icon: <SiNextdotjs className="w-4 h-4 text-white" /> },
-        { name: "TypeScript", icon: <SiTypescript className="w-4 h-4 text-[#3178C6]" /> },
         { name: "Tailwind CSS", icon: <SiTailwindcss className="w-4 h-4 text-[#38B2AC]" /> },
         { name: "HTML5", icon: <BsFileEarmarkCode className="w-4 h-4 text-[#E34F26]" /> },
         { name: "CSS3", icon: <BsFileEarmarkCode className="w-4 h-4 text-[#1572B6]" /> },
       ],
+    },*/
+    {
+      icon: Database,
+      title: "Data Science & Analytics",
+      color: "text-pink-400",
+      skills: [
+        { name: "NumPy", icon: <SiNumpy className="w-4 h-4 text-[#C21325]" /> },
+        { name: "Pandas", icon: <SiPandas className="w-4 h-4 text-[#8DD6F9]" /> },
+        { name: "Microsoft Excel", icon: <FaFileExcel className="w-4 h-4 text-[#21a366]" /> },
+        { name: "Power BI", icon: <FaMicrosoft className="w-4 h-4 text-[#FFCA28]" /> },
+        { name: "Tableau", icon: <SiTableau className="w-4 h-4 text-[#E97627]" /> },
+        { name: "Scikitlearn", icon: <SiScikitlearn className="w-4 h-4 text-[#FFA800]" /> },
+        { name: "SQL", icon: <SiPostgresql className="w-4 h-4 text-[#008bb9]" /> },
+        { name: "MongoDB", icon: <SiMongodb className="w-4 h-4 text-[#4DB33D]" /> },
+      ],
     },
     {
+      icon: Cpu,
+      title: "AI, ML & Deep Learning",
+      color: "text-pink-400",
+      skills: [
+        { name: "NumPy", icon: <SiNumpy className="w-4 h-4 text-[#C21325]" /> },
+        { name: "Scikitlearn", icon: <SiScikitlearn className="w-4 h-4 text-[#FFA800]" /> },
+        { name: "PyTorch", icon: <SiPytorch className="w-4 h-4 text-[#DE3412]" /> },
+        { name: "TensorFlow", icon: <SiTensorflow className="w-4 h-4 text-[#FFA800]" /> },
+        { name: "OpenAI", icon: <SiOpenai className="w-4 h-4 text-[#99999]" /> },
+        { name: "OpenAI Gym", icon: <SiOpenaigym className="w-4 h-4 text-[#99999]" /> },
+        { name: "OpenCV", icon: <SiOpencv className="w-4 h-4 text-[#5C3EE3]" /> },
+        { name: "ClearML", icon: <SiVercel className="w-4 h-4 text-white" /> },
+        { name: "LangChain", icon: <SiLangchain className="w-4 h-4 text-[#4A98A5]" /> },
+      ],
+    },    
+     /*{
       icon: Database,
       title: "Backend Development",
       color: "text-green-400",
@@ -106,7 +146,6 @@ const SkillsSection = () => {
         { name: "PostgreSQL", icon: <SiPostgresql className="w-4 h-4 text-[#336791]" /> },
         { name: "MongoDB", icon: <SiMongodb className="w-4 h-4 text-[#47A248]" /> },
         { name: "REST APIs", icon: <BsGrid1X2 className="w-4 h-4 text-[#FF6C37]" /> },
-        { name: "GraphQL", icon: <SiGraphql className="w-4 h-4 text-[#E10098]" /> },
       ],
     },
     {
@@ -119,35 +158,23 @@ const SkillsSection = () => {
         { name: "Wireframing", icon: <BsGrid1X2 className="w-4 h-4 text-[#9CA3AF]" /> },
         { name: "Prototyping", icon: <MdAnimation className="w-4 h-4 text-[#F59E0B]" /> },
       ],
-    },
+    },*/
     {
       icon: Cloud,
       title: "Cloud & DevOps",
       color: "text-orange-400",
       skills: [
         { name: "AWS", icon: <FaAws className="w-4 h-4 text-[#FF9900]" /> },
+        { name: "GCP", icon: <SiGooglecloud className="w-4 h-4 text-[#FCC624]" /> },
         { name: "Docker", icon: <FaDocker className="w-4 h-4 text-[#2496ED]" /> },
         { name: "CI/CD", icon: <FcWorkflow className="w-4 h-4" /> },
-        { name: "Kubernetes", icon: <BsGrid1X2 className="w-4 h-4 text-[#326CE5]" /> },
+        /* { name: "Kubernetes", icon: <BsGrid1X2 className="w-4 h-4 text-[#326CE5]" /> },*/
         { name: "Git", icon: <FaGitAlt className="w-4 h-4 text-[#F05032]" /> },
         { name: "Linux", icon: <FaLinux className="w-4 h-4 text-[#FCC624]" /> },
       ],
     },
-    {
-      icon: Cpu,
-      title: "Data Science & ML",
-      color: "text-pink-400",
-      skills: [
-        { name: "VS Code", icon: <TbBrandVscode className="w-4 h-4 text-[#007ACC]" /> },
-        { name: "NumPy", icon: <SiNumpy className="w-4 h-4 text-[#C21325]" /> },
-        { name: "Pandas", icon: <SiPandas className="w-4 h-4 text-[#8DD6F9]" /> },
-        { name: "Scikitlearn", icon: <SiScikitlearn className="w-4 h-4 text-[#646CFF]" /> },
-        { name: "PyTorch", icon: <SiPytorch className="w-4 h-4 text-[#764ABC]" /> },
-        { name: "TensorFlow", icon: <SiTensorflow className="w-4 h-4 text-[#FFCA28]" /> },
-        { name: "ClearML", icon: <SiVercel className="w-4 h-4 text-white" /> },
-      ],
-    },
-    {
+
+    /*{
       icon: Handshake,
       title: "Soft Skills",
       color: "text-yellow-400",
@@ -157,10 +184,21 @@ const SkillsSection = () => {
         { name: "Agile/Scrum", icon: <Cpu className="w-4 h-4 text-[#7C4DFF]" /> },
         { name: "Collaboration", icon: <MdAnimation className="w-4 h-4 text-[#FF6D00]" /> },
       ],
-    },
+    },*/
   ];
 
   const certificates = [
+    {
+      title: "Databricks Accredited Generative AI Fundamentals",
+      issuer: "Databricks",
+      image: "/certs/databricks.jpg",
+      link: "https://credentials.databricks.com/b5fe450e-9c6e-4587-9bbf-3d54760c6f7e#acc.rOYfxg7G"
+    },
+    {
+      title: "Generative AI",
+      issuer: "Cognizant | Sydney, Australia",
+      image: "/certs/GenAI.png",
+    },        
     {
       title: "Data Science Professional",
       issuer: "IBM | Coursera",
@@ -172,17 +210,6 @@ const SkillsSection = () => {
       issuer: "Udacity",
       image: "/certs/udacity.jpg",
       link: "https://s3-us-west-2.amazonaws.com/udacity-printer/production/certificates/0aa1bb89-55d4-4281-b7d6-4551662227e4.pdf"
-    },
-    {
-      title: "Databricks Accredited Generative AI Fundamentals",
-      issuer: "Databricks",
-      image: "/certs/databricks.jpg",
-      link: "https://credentials.databricks.com/b5fe450e-9c6e-4587-9bbf-3d54760c6f7e#acc.rOYfxg7G"
-    },
-    {
-      title: "Generative AI",
-      issuer: "Cognizant | Sydney, Australia",
-      image: "/certs/GenAI.png",
     },
     {
       title: "Computer Vision",

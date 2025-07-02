@@ -20,20 +20,31 @@ const EducationSection = () => {
       degree: "Master of Artificial Intelligence",
       school: "University of Technology Sydney (UTS), Australia",
       department: "School of Computer Science, FEIT",
-      mascot: "📘",
+      mascot: "🎓",
       year: "2023-2025",
-      achievements: ["GPA: 4.89", "FEIT Dean's List 2024", "BUILD Leadership Program"],
-      skills: ["Computer Vision", "Image Processing", "Deep Learning", "AI", "Reinforcement Learning", "Machine Learning", "Data Science & Analytics"],
+      achievements: ["FEIT Dean's List 2024 & 2025", "BUILD Leadership Program"],
+      skills: ["Computer Vision", "Image Processing", "Deep Learning", "AI/GenAI", "Multimodal AI", "Reinforcement Learning", "Machine Learning", "Data Science & Analytics", "Software Development", "Global Leadership"],
       description:
         "Focused on core AI subjects with emphasis on practical laboratory work and scientific research methodologies.",
     },
     {
+      degree: "Master of Business Administration (MBA)",
+      school: "Da-Yeh University, Taiwan",
+      department: "Department of Business Administration",
+      mascot: "🎓",
+      year: "2016-2018",
+      achievements: ["GPA: 4.3 / 4.3"],
+      skills: ["Operations Management", "Financial Management", "Marketing Management", "Strategic Management", "Applied Statistics", "Managerial Economics"],
+      description:
+        "Completed a comprehensive MBA program focused on core business disciplines including strategy, finance, operations, and marketing. Gained strong analytical and decision-making skills through case studies, group projects, and applied research.",
+    },    
+    {
       degree: "Bachelor of Statistics",
       school: "National University of Mongolia",
       department: "School of Economic Studies",
-      mascot: "📗",
+      mascot: "🎓",
       year: "2008-2012",
-      achievements: ["GPA: 4.25", "Subject: Statistics"],
+      achievements: ["GPA: 3.5 / 4.0", "Statistics Olympiad Winner"],
       skills: ["Economics", "Statistics", "Econometrics", "Data Analysis"],
       description:
         "Developed strong analytical and critical thinking skills through comprehensive study of statistics.",
@@ -82,8 +93,7 @@ const EducationSection = () => {
             Educational Journey
           </h2>
           <p className="text-gray-300 max-w-2xl mx-auto text-lg font-mono">
-            Discover how academic excellence shapes innovative thinking and
-            professional growth.
+            Empowering innovation through academic excellence and lifelong learning.
           </p>
         </motion.div>
 

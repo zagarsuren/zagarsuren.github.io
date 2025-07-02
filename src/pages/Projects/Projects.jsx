@@ -11,7 +11,7 @@ const projects = [
       "Instance Segmentation For Building Damage Assessment and Cost Estimation Using Deep Learning and Computer Vision.",
     link: "https://i.imgur.com/IfohMTo.jpeg",
     color: "#5196fd",
-    githubLink: "#",
+    githubLink: "https://github.com/AI-Studio-DeployForce/training-pipeline",
     liveLink: "#",
     id: 1,
   },
@@ -22,7 +22,7 @@ const projects = [
     link: "https://i.imgur.com/vHqlHra.jpeg",
     color: "#ed649e",
     githubLink: "https://github.com/zagarsuren/visionaid-vqa",
-    liveLink: "#",
+    liveLink: "https://www.youtube.com/watch?v=KVF-vVqpshE&list=PLl6a-ZAg4AlFQQxKCs9E57xSqUhpPNxDt",
     id: 2,
   },
   {

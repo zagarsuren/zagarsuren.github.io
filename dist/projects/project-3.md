@@ -1,10 +1,9 @@
-# 🩺 Chest X-ray Classification System
+## 🩺 Chest X-ray Classification System
 
-A web application that classifies chest X-ray images using state-of-the-art deep learning models. The system supports multiple backbone architectures and ensemble predictions for robust diagnosis across five major thoracic conditions.
+### 🔍 Project Overview:
+ChestX-Ray AI is a deep learning project focused on advancing multi-label disease detection from chest radiographs. The study compares leading Convolutional Neural Networks (DenseNet121, ResNet50, EfficientNet, InceptionV3, and YOLOv11-classification) with a Swin Transformer (Swin-B) for classifying five common thoracic conditions — Atelectasis, Cardiomegaly, Effusion, Nodule, and Pneumothorax — using the NIH ChestX-ray14 dataset. The goal was to assess how well traditional CNNs’ local feature extraction and Swin Transformer’s global context modelling perform individually and as an ensemble.
 
-## 🔍 Overview
-
-This app enables users (medical professionals, researchers, or students) to:
+The app enables users (medical professionals, researchers, or students) to:
 
 * Upload a chest X-ray image (JPG, PNG)
 * Choose from various models such as Swin Transformers, DenseNet, ResNet, EfficientNet, Inception, YOLOv11, or a custom Ensemble
@@ -12,7 +11,7 @@ This app enables users (medical professionals, researchers, or students) to:
 * Optionally specify the true label for performance tracking
 * Visualize results via a table and bar chart
 
-## 🧠 Supported Models
+### 🧠 Supported Models
 ```table
 | Model          | Type              | Highlights                                      |
 | -------------- | ----------------- | ----------------------------------------------- |
@@ -24,27 +23,8 @@ This app enables users (medical professionals, researchers, or students) to:
 | YOLOv11s       | CNN (Detector)    | More detailed feature extraction                |
 | Ensemble       | Hybrid            | Combines outputs of all models via voting       |
 ```
-## 📁 Folder Structure
 
-```graphql
-project_root/
-│
-├── app.py                        # Streamlit app
-├── ensemble.py                   # Ensemble logic
-├── models/                       # Model weights
-├── predictors/
-│   ├── swin_s.py
-│   ├── swin_b.py
-│   ├── densenet.py
-│   ├── efficientnet.py
-│   ├── resnet.py
-│   ├── inception.py
-│   └── yolov11s.py
-├── requirements.txt              # Dependencies
-└── README.md                     
-```
-
-## ⚙️ Features
+### ⚙️ Features
 
 * 🖼 Upload and visualize chest X-ray images
 * 🤖 Multi-model prediction
@@ -52,7 +32,7 @@ project_root/
 * 🧪 True label selection (for evaluation)
 * 📉 Result charting for easy interpretation
 
-## 🏥 Target Conditions
+### 🏥 Target Conditions
 
 * Atelectasis
 * Cardiomegaly
@@ -60,7 +40,13 @@ project_root/
 * Nodule
 * Pneumothorax
 
-## 🧪 Example Use
+### Summary of Results:
+- DenseNet121 achieved the highest overall performance with an average F1-score of 0.75 and AUC > 0.91 on localised pathologies.
+- Swin-B Transformer excelled at Cardiomegaly, achieving F1 = 0.80 and AUC = 0.946, due to its strong global feature reasoning.
+- Model ensembling (CNNs + Swin-B) increased the average F1 score by 1%, showing complementary strengths.
+- Detection performance improved over existing benchmarks: Atelectasis AUC = 0.906, Nodule AUC = 0.916, outperforming previous state-of-the-art (AUC ≈ 0.85).
+
+### 🧪 Example Use
 
 * Select a model (e.g., Swin-B)
 * Upload a chest X-ray image
@@ -70,17 +56,18 @@ project_root/
 
 ![img](https://github.com/zagarsuren/chest-xray-app/blob/main/assets/ss1.jpeg?raw=true)
 
-## 🧑‍⚕️ Medical Disclaimer
+### 🧑‍⚕️ Medical Disclaimer
 
 > This tool is intended for research and educational purposes only and **must not** be used for clinical diagnosis or treatment decisions.
 
-## 🧑‍💻 Contributors
+### 🧑‍💻 Contributors
 ```sublime
 - Zagarsuren Sukhbaatar
 - Diego Alejandro Ramirez Vargas
 - Shudarshan Singh Kongkham
 - Dhruv Harish Punjwani
 ```
+
 ## 📝 License
 
 This project is licensed under the MIT License.
