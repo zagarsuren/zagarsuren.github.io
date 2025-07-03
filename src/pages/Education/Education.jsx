@@ -22,7 +22,7 @@ const EducationSection = () => {
       department: "School of Computer Science, FEIT",
       mascot: "🎓",
       year: "2023-2025",
-      achievements: ["FEIT Dean's List 2024 & 2025"],
+      achievements: ["FEIT Dean's List 2024 & 2025", "Academic Excellence Scholarship"],
       skills: ["Computer Vision", "Image Processing", "Deep Learning", "AI/GenAI", "Multimodal AI", "Reinforcement Learning", "Machine Learning", "Data Science & Analytics", "Software Development"],
       /*description:
         "Focused on core AI subjects with emphasis on practical laboratory work and scientific research methodologies.",*/
@@ -44,7 +44,7 @@ const EducationSection = () => {
       department: "Department of Business Administration",
       mascot: "🎓",
       year: "2016-2018",
-      achievements: ["GPA: 4.3 / 4.3"],
+      achievements: ["GPA: 4.3/4.3"],
       skills: ["Operations Management", "Financial Management", "Marketing Management", "Strategic Management", "Applied Statistics", "Managerial Economics"],
       /*description:
         "Completed a comprehensive MBA program focused on core business disciplines including strategy, finance, operations, and marketing. Gained strong analytical and decision-making skills through case studies, group projects, and applied research.",*/
@@ -55,7 +55,7 @@ const EducationSection = () => {
       department: "School of Economic Studies",
       mascot: "🎓",
       year: "2008-2012",
-      achievements: ["GPA: 3.5 / 4.0", "Statistics Olympiad Winner"],
+      achievements: ["GPA: 3.5/4.0", "Statistics Olympiad Winner"],
       skills: ["Theory of Statistics", "Probability", "Economics", "Econometrics", "Data Analysis", "Statistical Software", "Quantitative Research", "Survey Methodology", "Multivariate Statistics"],
       /*description:
         "Developed strong analytical and critical thinking skills through comprehensive study of statistics.",*/

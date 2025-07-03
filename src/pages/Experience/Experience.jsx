@@ -58,48 +58,48 @@ const ExperienceSection = () => {
       title: "Founder",
       company: "Data School",
       period: "2018 - Current",
-      /*description:
-        "Founded Data School with a mission to close the education gap and empower the Mongolian community by providing high-quality, accessible content in Data Science, AI, and digital skills. Contributed to the personal and professional growth of learners across Mongolia and Mongolians living or studying abroad, supporting career transitions and skills development in the data and AI fields.",*/
+      description:
+        "Founded Data School with a mission to close the education gap and empower the Mongolian community by providing high-quality, accessible content in Data Science, AI, and digital skills.",
     },
     {
       icon: Network,
       title: "Board Member",
       company: "Machine Learning Ulaanbaatar (MLUB)",
       period: "2020 - Current",
-      /* description:
-        "Machine Learning UB (MLUB) is a community dedicated to promoting AI and machine learning education, collaboration, and innovation in Mongolia. As a non-profit initiative, MLUB organizes meetups, workshops, and national conferences that bring together data enthusiasts, researchers, and industry professionals to share knowledge and solve real-world problems through data science.",*/
+      description:
+        "Machine Learning UB (MLUB) is a community dedicated to promoting AI and machine learning education, collaboration, and innovation in Mongolia.",
     },    
     {
       icon: Cpu,
       title: "Data Science Manager",
       company: "Unitel Group",
       period: "2019 - 2023",
-      /* description:
-        "As a Data Science Manager at Mongolia's Biggest Information and Communications Technology company, I managed a cross-functional team in designing and deploying advanced analytics solutions, including credit scoring, network analysis, churn prediction, sentiment analysis, and time series forecasting, driving data-informed business strategies.",*/
+      description:
+        "As a Data Science Manager at Mongolia's one of the largest Information and Communications Technology company, I managed a cross-functional team in designing and deploying advanced analytics solutions.",
     },
     {
       icon: Binary,
       title: "Senior Data Analyst",
       company: "Unitel Group",
       period: "2018 - 2019",
-      /* description:
-        "Led a team of data analysts across multiple projects, ensuring timely delivery of high-quality insights and models aligned with business objectives. Developed and deployed predictive models and scoring systems using diverse machine learning frameworks to enhance business intelligence and forecasting accuracy.",*/
+      description:
+        "Led a team of data analysts across multiple projects, ensuring timely delivery of high-quality insights and models aligned with business objectives.",
     },  
     {
       icon: BrainCircuit,
       title: "Research Specialist / Senior Business Analyst",
       company: "Unitel Group",
       period: "2012 - 2016",
-      /* description:
-        "Collaborated cross-functionally to deliver data-driven insights that supported strategic planning, operational improvements, and customer engagement initiatives.",*/
+      description:
+        "Collaborated cross-functionally to deliver data-driven insights that supported strategic planning, operational improvements, and customer engagement initiatives.",
     },      
     {
       icon: ChartScatter,
       title: "Business Analyst",
       company: "Interconsulting Group",
       period: "2011 - 2012",
-      /* description:
-        "Led and facilitated surveys and focus group studies across the automotive, cashmere, and dairy industries, enabling clients to gain deep understanding of consumer behavior and preferences for data-informed planning.",*/
+      description:
+        "Led and facilitated surveys and focus group studies across industries, enabling clients to gain deep understanding of consumer behavior and preferences for data-informed planning.",
     }
   ];
 
