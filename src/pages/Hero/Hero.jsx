@@ -44,10 +44,14 @@ const GridBackground = () => {
 
 export default function Hero() {
   const words = [
-    "Founder",
-    "Educator",
-    "Data Scientist",
-    "AI specialist"
+    "Data Science",
+    "Artificial Intelligence",
+    "Machine Learning",
+    "Deep Learning",
+    "Computer Vision",
+    "Natural Language Processing",
+    "Data Analytics",
+    "Computer Science"
   ];
 
   useEffect(() => {
