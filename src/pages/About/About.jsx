@@ -23,11 +23,11 @@ export default function About() {
 
             <div className="relative space-y-4">
               <p className="text-white font-mono">
-                👋 Hi, I’m Zagarsuren — an AI developer and researcher with a strong foundation in data science, machine learning, and computer vision. I specialize in building intelligent systems that combine data-driven insights with real-world impact.
+                👋 Hi, I’m Zagarsuren — an AI Specialist and with a strong foundation in statistics, data science, and machine learning. I specialize in building intelligent systems that combine data-driven insights with real-world impact.
               </p>
               
               <p className="text-white font-mono">
-                I’m currently pursuing a Master of AI at the University of Technology Sydney, where I’m honing my skills in data analysis, machine learning, and AI development.
+                I recently completed my Master of Artificial Intelligence at the University of Technology Sydney, where I developed advanced skills in data analytics, machine learning, and AI system development.
               </p>
               {/*<p className="text-white font-mono">
                 With hands-on experience in Python, TensorFlow, PyTorch, and open-source frameworks, I’ve worked on projects ranging from disaster damage segmentation using satellite imagery to inclusive AI solutions for accessibility.

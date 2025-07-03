@@ -24,16 +24,16 @@ const ExperienceCard = ({
 
       {/* Content with improved typography */}
       <div className="space-y-3">
-        <h3 className="text-2xl font-bold bg-gradient-to-r from-cyan-400 to-blue-400 bg-clip-text text-transparent">
+        <h3 className="text-2xl font-bold bg-gradient-to-r from-cyan-400 to-blue-400 bg-clip-text text-transparent font-mono">
           {title}
         </h3>
-        <div className="flex justify-between items-center text-gray-300">
-          <span className="font-semibold text-blue-400">{company}</span>
-          <span className="text-sm font-mono bg-blue-500/10 px-3 py-1 rounded-full">
+        <div className="flex justify-between items-center text-gray-300 font-mono">
+          <span className="font-semibold text-blue-400 font-mono">{company}</span>
+          <span className="text-sm font-mono bg-blue-500/10 px-3 py-1 rounded-full font-mono">
             {period}
           </span>
         </div>
-        <p className="text-gray-300 border-l-4 border-blue-500/50 pl-4 mt-4 leading-relaxed">
+        <p className="text-gray-300 border-l-4 border-blue-500/50 pl-4 mt-4 leading-relaxed font-mono">
           {description}
         </p>
       </div>
@@ -58,48 +58,48 @@ const ExperienceSection = () => {
       title: "Founder",
       company: "Data School",
       period: "2018 - Current",
-      description:
-        "Founded Data School with a mission to close the education gap and empower the Mongolian community by providing high-quality, accessible content in Data Science, AI, and digital skills. Contributed to the personal and professional growth of learners across Mongolia and Mongolians living or studying abroad, supporting career transitions and skills development in the data and AI fields.",
+      /*description:
+        "Founded Data School with a mission to close the education gap and empower the Mongolian community by providing high-quality, accessible content in Data Science, AI, and digital skills. Contributed to the personal and professional growth of learners across Mongolia and Mongolians living or studying abroad, supporting career transitions and skills development in the data and AI fields.",*/
     },
     {
       icon: Network,
       title: "Board Member",
       company: "Machine Learning Ulaanbaatar (MLUB)",
       period: "2020 - Current",
-      description:
-        "Machine Learning UB (MLUB) is a community dedicated to promoting AI and machine learning education, collaboration, and innovation in Mongolia. As a non-profit initiative, MLUB organizes meetups, workshops, and national conferences that bring together data enthusiasts, researchers, and industry professionals to share knowledge and solve real-world problems through data science.",
+      /* description:
+        "Machine Learning UB (MLUB) is a community dedicated to promoting AI and machine learning education, collaboration, and innovation in Mongolia. As a non-profit initiative, MLUB organizes meetups, workshops, and national conferences that bring together data enthusiasts, researchers, and industry professionals to share knowledge and solve real-world problems through data science.",*/
     },    
     {
       icon: Cpu,
       title: "Data Science Manager",
       company: "Unitel Group",
       period: "2019 - 2023",
-      description:
-        "As a Data Science Manager at Mongolia's Biggest Information and Communications Technology company, I managed a cross-functional team in designing and deploying advanced analytics solutions, including credit scoring, network analysis, churn prediction, sentiment analysis, and time series forecasting, driving data-informed business strategies.",
+      /* description:
+        "As a Data Science Manager at Mongolia's Biggest Information and Communications Technology company, I managed a cross-functional team in designing and deploying advanced analytics solutions, including credit scoring, network analysis, churn prediction, sentiment analysis, and time series forecasting, driving data-informed business strategies.",*/
     },
     {
       icon: Binary,
       title: "Senior Data Analyst",
       company: "Unitel Group",
       period: "2018 - 2019",
-      description:
-        "Led a team of data analysts across multiple projects, ensuring timely delivery of high-quality insights and models aligned with business objectives. Developed and deployed predictive models and scoring systems using diverse machine learning frameworks to enhance business intelligence and forecasting accuracy.",
+      /* description:
+        "Led a team of data analysts across multiple projects, ensuring timely delivery of high-quality insights and models aligned with business objectives. Developed and deployed predictive models and scoring systems using diverse machine learning frameworks to enhance business intelligence and forecasting accuracy.",*/
     },  
     {
       icon: BrainCircuit,
       title: "Research Specialist / Senior Business Analyst",
       company: "Unitel Group",
       period: "2012 - 2016",
-      description:
-        "Collaborated cross-functionally to deliver data-driven insights that supported strategic planning, operational improvements, and customer engagement initiatives.",
+      /* description:
+        "Collaborated cross-functionally to deliver data-driven insights that supported strategic planning, operational improvements, and customer engagement initiatives.",*/
     },      
     {
       icon: ChartScatter,
       title: "Business Analyst",
       company: "Interconsulting Group",
       period: "2011 - 2012",
-      description:
-        "Led and facilitated surveys and focus group studies across the automotive, cashmere, and dairy industries, enabling clients to gain deep understanding of consumer behavior and preferences for data-informed planning.",
+      /* description:
+        "Led and facilitated surveys and focus group studies across the automotive, cashmere, and dairy industries, enabling clients to gain deep understanding of consumer behavior and preferences for data-informed planning.",*/
     }
   ];
 

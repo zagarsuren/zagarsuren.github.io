@@ -69,7 +69,7 @@ const projects = [
 
 export default function Projects() {
   return (
-    <section className="bg-black text-white py-24 px-4 lg:px-8">
+    <section className="bg-black text-white py-24 px-4 lg:px-8 font-mono">
       <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12">
         {projects.map((project, i) => (
           <Card key={`project_${i}`} {...project} index={i + 1} />
@@ -104,8 +104,8 @@ function Card({ title, description, link, color, githubLink, liveLink, index, id
       </div>
 
       <div className="p-6 space-y-4">
-        <h2 className="text-2xl font-semibold">{title}</h2>
-        <p className="text-gray-400 text-sm">{description}</p>
+        <h2 className="text-2xl font-semibold font-mono">{title}</h2>
+        <p className="text-gray-400 text-sm font-mono">{description}</p>
 
         <div className="flex gap-4 pt-2">
           <a

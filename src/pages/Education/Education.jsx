@@ -22,11 +22,22 @@ const EducationSection = () => {
       department: "School of Computer Science, FEIT",
       mascot: "🎓",
       year: "2023-2025",
-      achievements: ["FEIT Dean's List 2024 & 2025", "BUILD Leadership Program"],
-      skills: ["Computer Vision", "Image Processing", "Deep Learning", "AI/GenAI", "Multimodal AI", "Reinforcement Learning", "Machine Learning", "Data Science & Analytics", "Software Development", "Global Leadership"],
-      description:
-        "Focused on core AI subjects with emphasis on practical laboratory work and scientific research methodologies.",
+      achievements: ["FEIT Dean's List 2024 & 2025"],
+      skills: ["Computer Vision", "Image Processing", "Deep Learning", "AI/GenAI", "Multimodal AI", "Reinforcement Learning", "Machine Learning", "Data Science & Analytics", "Software Development"],
+      /*description:
+        "Focused on core AI subjects with emphasis on practical laboratory work and scientific research methodologies.",*/
     },
+    {
+      degree: "BUILD Global Leadership Program",
+      school: "University of Technology Sydney (UTS), Australia",
+      department: "UTS International",
+      mascot: "🎓",
+      year: "2023-2024",
+      achievements: ["Points:100/100", "Certificate of Completion"],
+      skills: ["Leadership", "Global citizenship", "SDGs", "Community engagement", "Social Impact", "Professional branding", "Critical thinking"],
+      /*description:
+        "Focused on core AI subjects with emphasis on practical laboratory work and scientific research methodologies.",*/
+    },    
     {
       degree: "Master of Business Administration (MBA)",
       school: "Da-Yeh University, Taiwan",
@@ -35,8 +46,8 @@ const EducationSection = () => {
       year: "2016-2018",
       achievements: ["GPA: 4.3 / 4.3"],
       skills: ["Operations Management", "Financial Management", "Marketing Management", "Strategic Management", "Applied Statistics", "Managerial Economics"],
-      description:
-        "Completed a comprehensive MBA program focused on core business disciplines including strategy, finance, operations, and marketing. Gained strong analytical and decision-making skills through case studies, group projects, and applied research.",
+      /*description:
+        "Completed a comprehensive MBA program focused on core business disciplines including strategy, finance, operations, and marketing. Gained strong analytical and decision-making skills through case studies, group projects, and applied research.",*/
     },    
     {
       degree: "Bachelor of Statistics",
@@ -45,9 +56,9 @@ const EducationSection = () => {
       mascot: "🎓",
       year: "2008-2012",
       achievements: ["GPA: 3.5 / 4.0", "Statistics Olympiad Winner"],
-      skills: ["Economics", "Statistics", "Econometrics", "Data Analysis"],
-      description:
-        "Developed strong analytical and critical thinking skills through comprehensive study of statistics.",
+      skills: ["Theory of Statistics", "Probability", "Economics", "Econometrics", "Data Analysis", "Statistical Software", "Quantitative Research", "Survey Methodology", "Multivariate Statistics"],
+      /*description:
+        "Developed strong analytical and critical thinking skills through comprehensive study of statistics.",*/
     }
   ];
 
@@ -87,7 +98,7 @@ const EducationSection = () => {
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
-          className="text-center mb-16"
+          className="text-center mb-16 font-mono"
         >
           <h2 className="text-5xl md:text-7xl font-bold bg-gradient-to-r from-teal-400 to-blue-500 bg-clip-text text-transparent mb-6 font-mono">
             Educational Journey
@@ -118,8 +129,8 @@ const EducationSection = () => {
               <div className="space-y-6">
                 <div className="space-y-2">
                   <div className="flex items-center gap-3">
-                    <span className="text-3xl">{edu.mascot}</span>
-                    <h3 className="text-2xl font-bold text-white">
+                    <span className="text-3xl font-mono">{edu.mascot}</span>
+                    <h3 className="text-2xl font-bold text-white font-mono">
                       {edu.degree}
                     </h3>
                   </div>
@@ -131,18 +142,18 @@ const EducationSection = () => {
                     <BookOpen className="w-5 h-5 text-teal-500" />
                     {edu.department}
                   </p>
-                  <p className="text-gray-400 flex items-center gap-2">
+                  <p className="text-gray-400 flex items-center gap-2 font-mono">
                     <Calendar className="w-4 h-4" />
                     {edu.year}
                   </p>
                 </div>
 
-                <p className="text-gray-300 text-sm italic border-l-2 border-teal-500 pl-3">
+                <p className="text-gray-300 text-sm italic border-l-2 border-teal-500 pl-3 font-mono">
                   {edu.description}
                 </p>
 
                 <div className="space-y-3">
-                  <h4 className="text-sm font-semibold text-white flex items-center gap-2">
+                  <h4 className="text-sm font-semibold text-white flex items-center gap-2 font-mono">
                     <Trophy className="w-4 h-4 text-yellow-500" />
                     Key Achievements
                   </h4>
@@ -150,7 +161,7 @@ const EducationSection = () => {
                     {edu.achievements.map((achievement, i) => (
                       <div
                         key={i}
-                        className="px-3 py-1 rounded-full bg-teal-500/10 text-teal-400 flex items-center gap-2 text-sm"
+                        className="px-3 py-1 rounded-full bg-teal-500/10 text-teal-400 flex items-center gap-2 text-sm font-mono"
                       >
                         <Award className="w-4 h-4" />
                         <span>{achievement}</span>
@@ -163,7 +174,7 @@ const EducationSection = () => {
                   {edu.skills.map((skill, i) => (
                     <span
                       key={i}
-                      className="px-2 py-1 text-xs rounded bg-blue-500/10 text-blue-300"
+                      className="px-2 py-1 text-xs rounded bg-blue-500/10 text-blue-300 font-mono"
                     >
                       {skill}
                     </span>
