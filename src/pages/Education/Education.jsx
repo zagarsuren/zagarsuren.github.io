@@ -12,6 +12,7 @@ import {
 } from "lucide-react";
 import { motion } from "framer-motion";
 
+
 const EducationSection = () => {
   const [hoveredIndex, setHoveredIndex] = useState(null);
 
@@ -20,9 +21,9 @@ const EducationSection = () => {
       degree: "Master of Artificial Intelligence",
       school: "University of Technology Sydney (UTS), Australia",
       department: "School of Computer Science, FEIT",
-      mascot: "🎓",
+      logo: "/logos/uts-logo.svg",
       year: "2023-2025",
-      achievements: ["FEIT Dean's List 2024 & 2025", "Academic Excellence Scholarship"],
+      achievements: ["FEIT Dean's List 2024 & 2025", "High Distinction Average"],
       skills: ["Computer Vision", "Image Processing", "Deep Learning", "AI/GenAI", "Multimodal AI", "Reinforcement Learning", "Machine Learning", "Data Science & Analytics", "Software Development"],
       /*description:
         "Focused on core AI subjects with emphasis on practical laboratory work and scientific research methodologies.",*/
@@ -31,7 +32,7 @@ const EducationSection = () => {
       degree: "BUILD Global Leadership Program",
       school: "University of Technology Sydney (UTS), Australia",
       department: "UTS International",
-      mascot: "🎓",
+      logo: "/logos/uts-logo.svg",
       year: "2023-2024",
       achievements: ["Points:100/100", "Certificate of Completion"],
       skills: ["Leadership", "Global citizenship", "SDGs", "Community engagement", "Social Impact", "Professional branding", "Critical thinking"],
@@ -42,7 +43,7 @@ const EducationSection = () => {
       degree: "Master of Business Administration (MBA)",
       school: "Da-Yeh University, Taiwan",
       department: "Department of Business Administration",
-      mascot: "🎓",
+      logo: "/logos/dayeh-logo.png",
       year: "2016-2018",
       achievements: ["GPA: 4.3/4.3"],
       skills: ["Operations Management", "Financial Management", "Marketing Management", "Strategic Management", "Applied Statistics", "Managerial Economics"],
@@ -53,7 +54,7 @@ const EducationSection = () => {
       degree: "Bachelor of Statistics",
       school: "National University of Mongolia",
       department: "School of Economic Studies",
-      mascot: "🎓",
+      logo: "/logos/num-logo.png",
       year: "2008-2012",
       achievements: ["GPA: 3.5/4.0", "Statistics Olympiad Winner"],
       skills: ["Theory of Statistics", "Probability", "Economics", "Econometrics", "Data Analysis", "Statistical Software", "Quantitative Research", "Survey Methodology", "Multivariate Statistics"],
@@ -129,7 +130,7 @@ const EducationSection = () => {
               <div className="space-y-6">
                 <div className="space-y-2">
                   <div className="flex items-center gap-3">
-                    <span className="text-3xl font-mono">{edu.mascot}</span>
+                    <img src={edu.logo} alt="UTS Logo" className="w-10 h-10 object-contain" />
                     <h3 className="text-2xl font-bold text-white font-mono">
                       {edu.degree}
                     </h3>
