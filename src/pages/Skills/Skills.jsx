@@ -189,6 +189,11 @@ const SkillsSection = () => {
 
   const certificates = [
     {
+      title: "Building Generative AI Applications Using Amazon Bedrock",
+      issuer: "AWS",
+      image: "/certs/aws-bedrock.jpg",
+    },
+    {
       title: "Databricks Accredited Generative AI Fundamentals",
       issuer: "Databricks",
       image: "/certs/databricks.jpg",
