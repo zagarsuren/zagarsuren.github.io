@@ -112,7 +112,7 @@ export default function Contact() {
                   </div>
                   <div>
                     <h3 className="font-semibold font-mono">Email</h3>
-                    <p className="text-gray-400 font-mono">zagarsuren.sukhbaatar@student.uts.edu.au</p>
+                    <p className="text-gray-400 font-mono"></p>
                   </div>
                 </div>
 
