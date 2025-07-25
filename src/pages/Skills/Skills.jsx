@@ -392,7 +392,7 @@ const conferences = [
           modules={[Navigation]}
           navigation
           spaceBetween={20}
-          slidesPerView={5}
+          slidesPerView={1}
           breakpoints={{
             640: { slidesPerView: 2 },
             768: { slidesPerView: 3 },
