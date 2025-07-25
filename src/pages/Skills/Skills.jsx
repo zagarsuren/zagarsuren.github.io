@@ -283,6 +283,11 @@ const conferences = [
     date: "February 2024",
   },
   {
+    name: "UNSW AI Symposium",
+    location: "UNSW, Sydney, Australia",
+    date: "November 2023",
+  },  
+  {
     name: "Data Nomads: AI & Data Science Conference",
     location: "Ulaanbaatar, Mongolia",
     date: "April 2020",
