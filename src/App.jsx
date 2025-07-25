@@ -11,7 +11,7 @@ import ProjectDetails from "./pages/ProjectDetails";
 import '@fontsource/jetbrains-mono'; // Defaults to weight 400
 import '@fontsource/jetbrains-mono/400.css'; // Regular
 import '@fontsource/jetbrains-mono/700.css'; // Bold
-
+import ScrollToTop from "./ScrollToTop";
 
 import { Route, Routes } from "react-router-dom";
 
@@ -22,6 +22,7 @@ export default function App() {
 
   return (
     <>
+      <ScrollToTop /> {/* Ensures each route starts at the top */}
       <Header />
       {/* Conditional Rendering */}
       {isOnePage ? (

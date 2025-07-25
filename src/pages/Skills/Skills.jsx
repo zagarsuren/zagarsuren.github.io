@@ -198,11 +198,6 @@ const SkillsSection = () => {
       issuer: "Databricks",
       image: "/certs/databricks.jpg",
       link: "https://credentials.databricks.com/b5fe450e-9c6e-4587-9bbf-3d54760c6f7e#acc.rOYfxg7G"
-    },
-    {
-      title: "Generative AI",
-      issuer: "Cognizant | Sydney, Australia",
-      image: "/certs/GenAI.png",
     },        
     {
       title: "Data Science Professional",
@@ -223,6 +218,81 @@ const SkillsSection = () => {
       link: "https://www.kaggle.com/learn/certification/zagarsuren/computer-vision"
     },
   ];
+
+  const badges = [
+    {
+      title: "Microsoft Cloud & AI Bootcamp 2025",
+      issuer: "Microsoft",
+      image: "/certs/microsoft-badge.png",
+    },
+    {
+      title: "MongoDB CRUD Operations",
+      issuer: "MongoDB",
+      image: "/certs/mongodb-badge.png",
+      link: "https://www.credly.com/badges/95bb844d-afa0-4cf0-891b-d6e46da4e062"
+    },
+    {
+      title: "Generative AI",
+      issuer: "Cognizant | Sydney, Australia",
+      image: "/certs/GenAI-badge.png",
+    },
+    {
+      title: "UTS BUILD Global Leadership Program",
+      issuer: "University of Technology Sydney",
+      image: "/certs/build-bage.png",
+      link: "https://au.badgr.com/public/assertions/cJC-NjK_SHi4uZPkjtz1Fw"
+    },
+    {
+      title: "Machine Learning with Python",
+      issuer: "IBM",
+      image: "/certs/ibm-badge.png",
+      link: "https://www.credly.com/earner/earned/badge/cd6f727c-d1ac-4095-b0fe-d3d29053ffd3"
+    }
+  ];  
+
+
+const conferences = [
+  {
+    name: "GitLab Connect Sydney",
+    location: "Sydney, Australia",
+    date: "July 2025",
+  },
+  {
+    name: "AWS Summit Sydney",
+    location: "Sydney, Australia",
+    date: "June 2025",
+  },
+  {
+    name: "Australasian Conference on Information Systems (ACIS 2024)",
+    location: "Canberra, Australia",
+    date: "December 2024",
+  },
+  {
+    name: "Microsoft AI Tour",
+    location: "Sydney, Australia",
+    date: "December 2024",
+  },
+  {
+    name: "Google I/O Extended",
+    location: "Sydney, Australia",
+    date: "June 2024",
+  },
+  {
+    name: "Salesforce World Tour",
+    location: "Sydney, Australia",
+    date: "February 2024",
+  },
+  {
+    name: "Data Nomads: AI & Data Science Conference",
+    location: "Ulaanbaatar, Mongolia",
+    date: "April 2020",
+  },
+  {
+    name: "Kaggle Days",
+    location: "Beijing, China",
+    date: "October 2019",
+  }
+];
 
   return (
     <main className="pt-15 lg:pt-0 text-white min-h-screen bg-[#04081A] relative">
@@ -304,6 +374,90 @@ const SkillsSection = () => {
             </SwiperSlide>
           ))}
         </Swiper>
+
+        {/* Badges Section */}
+        <div className="flex flex-col items-center space-y-8 pt-16 mb-10">
+          <div className="relative">
+            <h2 className="text-3xl md:text-5xl font-black text-transparent bg-gradient-to-r from-teal-400 to-blue-500 bg-clip-text text-center font-mono">
+              Badges
+            </h2>
+            <div className="absolute inset-0 -z-10 bg-gradient-to-r from-cyan-500/20 to-purple-500/20 blur-3xl rounded-full" />
+          </div>
+          <p className="text-lg md:text-xl text-gray-400 font-medium tracking-wide text-center max-w-2xl font-mono">
+            Digital badges that represent my achievements and skills in various domains
+          </p>
+        </div>
+
+        <Swiper
+          modules={[Navigation]}
+          navigation
+          spaceBetween={20}
+          slidesPerView={5}
+          breakpoints={{
+            640: { slidesPerView: 2 },
+            768: { slidesPerView: 3 },
+            1024: { slidesPerView: 4 },
+            1280: { slidesPerView: 5 }, // 5 badges visible
+          }}
+          className="pb-12"
+        >
+          {badges.map((cert, index) => (
+            <SwiperSlide key={index}>
+              <a
+                href={cert.link}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block bg-gray-900/80 border border-gray-700 rounded-xl overflow-hidden shadow-lg transition-transform duration-300 hover:scale-105"
+              >
+                <div className="flex items-center justify-center bg-gray-800 h-44"> 
+                  <img
+                    src={cert.image}
+                    alt={cert.title}
+                    className="h-36 object-contain" // fixed height, scales proportionally
+                  />
+                </div>
+                <div className="p-4">
+                  <h3 className="text-lg font-semibold text-white mb-1">
+                    {cert.title}
+                  </h3>
+                  <p className="text-gray-400 text-sm">{cert.issuer}</p>
+                </div>
+              </a>
+            </SwiperSlide>
+          ))}
+        </Swiper>
+
+        {/* Conferences Section */}
+        <div className="max-w-6xl mx-auto px-4 mt-12">
+          <h2 className="text-3xl md:text-5xl font-black text-transparent bg-gradient-to-r from-teal-400 to-blue-500 bg-clip-text text-center font-mono mb-8">
+            Conferences Attended
+          </h2>
+          
+          <div className="overflow-x-auto bg-gray-900/80 border border-gray-700 rounded-xl shadow-lg">
+            <table className="min-w-full text-left text-gray-300 font-mono">
+              <thead className="bg-gray-800">
+                <tr>
+                  <th className="px-6 py-3 text-sm font-semibold">Conference Name</th>
+                  <th className="px-6 py-3 text-sm font-semibold">Location</th>
+                  <th className="px-6 py-3 text-sm font-semibold">Date</th>
+                </tr>
+              </thead>
+              <tbody>
+                {conferences.map((conf, index) => (
+                  <tr
+                    key={index}
+                    className="border-t border-gray-700 hover:bg-gray-800/50 transition-colors"
+                  >
+                    <td className="px-6 py-4">{conf.name}</td>
+                    <td className="px-6 py-4">{conf.location}</td>
+                    <td className="px-6 py-4">{conf.date}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+        </div>
+
 
         {/* Section header with enhanced effects */}
         <div className="flex flex-col items-center space-y-8 pt-16 mb-10">

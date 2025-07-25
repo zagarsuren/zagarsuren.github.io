@@ -23,7 +23,7 @@ const EducationSection = () => {
       department: "School of Computer Science, FEIT",
       logo: "/logos/uts-logo.svg",
       year: "2023-2025",
-      achievements: ["FEIT Dean's List 2024 & 2025", "High Distinction Average"],
+      achievements: ["Postgraduate Academic Excellence Scholarship", "2024 Dean's List", "2025 Dean's List", "High Distinction Average", "GPA: 6.88/7.0"],
       skills: ["Computer Vision", "Image Processing", "Deep Learning", "AI/GenAI", "Multimodal AI", "Reinforcement Learning", "Machine Learning", "Data Science & Analytics", "Software Development"],
       /*description:
         "Focused on core AI subjects with emphasis on practical laboratory work and scientific research methodologies.",*/
@@ -34,8 +34,8 @@ const EducationSection = () => {
       department: "UTS International",
       logo: "/logos/uts-logo.svg",
       year: "2023-2024",
-      achievements: ["Points:100/100", "Certificate of Completion"],
-      skills: ["Leadership", "Global citizenship", "SDGs", "Community engagement", "Social Impact", "Professional branding", "Critical thinking"],
+      achievements: ["Points: 100/100", "Certificate of Completion"],
+      skills: ["Leadership", "Global citizenship", "Sustainable Development Goals", "Community engagement", "Social Impact", "Intercultural understanding", "Critical thinking"],
       /*description:
         "Focused on core AI subjects with emphasis on practical laboratory work and scientific research methodologies.",*/
     },    
@@ -93,7 +93,7 @@ const EducationSection = () => {
         <div className="absolute inset-0 bg-gradient-to-t from-[#04081A] via-transparent to-[#04081A]" />
         <div className="absolute inset-0 border border-white/[0.05] grid grid-cols-2 md:grid-cols-4" />
       </div>
-
+      
       <div className="max-w-6xl mx-auto px-4 relative z-10">
         <motion.div
           initial={{ opacity: 0, y: -20 }}
