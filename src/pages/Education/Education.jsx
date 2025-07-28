@@ -105,7 +105,7 @@ const EducationSection = () => {
             Educational Journey
           </h2>
           <p className="text-gray-300 max-w-2xl mx-auto text-lg font-mono">
-            Empowering innovation through academic excellence and lifelong learning.
+
           </p>
         </motion.div>
 

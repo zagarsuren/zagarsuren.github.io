@@ -22,7 +22,7 @@ const projects = [
     link: "https://i.imgur.com/vHqlHra.jpeg",
     color: "#ed649e",
     githubLink: "https://github.com/zagarsuren/visionaid-vqa",
-    liveLink: "https://www.youtube.com/watch?v=KVF-vVqpshE&list=PLl6a-ZAg4AlFQQxKCs9E57xSqUhpPNxDt",
+    liveLink: "#",
     id: 2,
   },
   {
@@ -125,7 +125,7 @@ function Card({ title, description, link, color, githubLink, liveLink, index, id
             className="flex items-center gap-1 text-green-400 hover:text-green-200 text-sm transition"
           >
             <Globe size={16} />
-            Live Demo
+            Demo
           </a>
 
           <Link
