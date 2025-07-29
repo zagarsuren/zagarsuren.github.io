@@ -10,8 +10,8 @@ Benchmark performance across major tech stocks, including AAPL, AMZN, GOOGL, MSF
 
 ### Core Technologies:
 - Reinforcement Learning (Q-Learning, DQN)
-- Python, TensorFlow / PyTorch
-- Custom Gym environments for stock trading
+- Python, TensorFlow
+- Custom Gym environment for stock trading
 - Data preprocessing with technical indicators (EMA, MACD, RSI, etc.)
 
 ### Summary of Results:
