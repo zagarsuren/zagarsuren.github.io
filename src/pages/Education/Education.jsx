@@ -24,7 +24,7 @@ const EducationSection = () => {
       logo: "/logos/uts-logo.svg",
       year: "2023-2025",
       achievements: ["Postgraduate Academic Excellence Scholarship", "2024 Dean's List", "2025 Dean's List", "High Distinction Average", "GPA: 6.88/7.0"],
-      skills: ["Computer Vision", "Image Processing", "Neural Networks", "Deep Learning", "CNN", "AI/GenAI", "LLM", "Multimodal AI", "Reinforcement Learning", "Machine Learning", "Data Science & Analytics", "Software Development", "Research Methodology", "Agile Methodologies", "Project Management"],
+      skills: ["Computer Vision", "Image Processing", "Neural Networks", "Deep Learning", "AI/GenAI", "LLM", "Multimodal AI", "Reinforcement Learning", "Machine Learning", "Data Science", "Software Development", "Agile Methodologies", "Research Methodology",  "Data & AI Ethics"],
       /*description:
         "Focused on core AI subjects with emphasis on practical laboratory work and scientific research methodologies.",*/
     },
