@@ -24,7 +24,7 @@ const EducationSection = () => {
       logo: "/logos/uts-logo.svg",
       year: "2023-2025",
       achievements: ["Postgraduate Academic Excellence Scholarship", "2024 Dean's List", "2025 Dean's List", "High Distinction Average", "GPA: 6.88/7.0"],
-      skills: ["Computer Vision", "Image Processing", "Deep Learning", "AI/GenAI", "Multimodal AI", "Reinforcement Learning", "Machine Learning", "Data Science & Analytics", "Software Development"],
+      skills: ["Computer Vision", "Image Processing", "Neural Networks", "Deep Learning", "CNN", "AI/GenAI", "LLM", "Multimodal AI", "Reinforcement Learning", "Machine Learning", "Data Science & Analytics", "Software Development", "Research Methodology", "Agile Methodologies", "Project Management"],
       /*description:
         "Focused on core AI subjects with emphasis on practical laboratory work and scientific research methodologies.",*/
     },
@@ -46,7 +46,7 @@ const EducationSection = () => {
       logo: "/logos/dayeh-logo.png",
       year: "2016-2018",
       achievements: ["GPA: 4.3/4.3"],
-      skills: ["Operations Management", "Financial Management", "Marketing Management", "Strategic Management", "Applied Statistics", "Managerial Economics"],
+      skills: ["Operations Management", "Financial Management", "Marketing Management", "Strategic Management", "Big Data Analysis", "Managerial Economics", "Business Ethics", "Applied Statistics", "Research Methodology", "Project Management"],
       /*description:
         "Completed a comprehensive MBA program focused on core business disciplines including strategy, finance, operations, and marketing. Gained strong analytical and decision-making skills through case studies, group projects, and applied research.",*/
     },    
