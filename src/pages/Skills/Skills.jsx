@@ -273,6 +273,11 @@ const conferences = [
     date: "December 2024",
   },
   {
+    name: "Databricks World Tour Sydney",
+    location: "Sydney, Australia",
+    date: "Aug 2024",
+  },  
+  {
     name: "Google I/O Extended",
     location: "Sydney, Australia",
     date: "June 2024",
