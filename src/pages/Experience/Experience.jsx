@@ -6,6 +6,9 @@ import {
   Network,
   BriefcaseBusiness,
   ChartScatter,
+  Database,
+  GraduationCap,
+  Code2,
 } from "lucide-react";
 
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -57,10 +60,18 @@ const ExperienceCard = ({
 const ExperienceSection = () => {
   const experiences = [
     {
-      icon: BriefcaseBusiness,
+      icon: Database,
+      title: "Co-Founder & CEO",
+      company: "DataTech LLC",
+      period: "2025 - Present",
+      description:
+        "DataTech brings together a team of data engineers, AI/ML specialists, and business intelligence professionals to deliver end‑to‑end data-driven solutions and digital transformation services for Mongolian businesses and institutions.",
+    },    
+    {
+      icon: Code2,
       title: "Founder",
       company: "Data School",
-      period: "2018 - Current",
+      period: "2018 - Present",
       description:
         "Founded Data School with a mission to close the education gap and empower the Mongolian community by providing high-quality, accessible content in Data Science, AI, and digital skills.",
     },
@@ -68,7 +79,7 @@ const ExperienceSection = () => {
       icon: Network,
       title: "Board Member",
       company: "Machine Learning Ulaanbaatar (MLUB)",
-      period: "2020 - Current",
+      period: "2020 - Present",
       description:
         "Machine Learning UB (MLUB) is a community dedicated to promoting AI and machine learning education, collaboration, and innovation in Mongolia.",
     },
@@ -96,14 +107,7 @@ const ExperienceSection = () => {
       description:
         "Collaborated cross-functionally to deliver data-driven insights that supported strategic planning, operational improvements, and customer engagement initiatives.",
     },
-    {
-      icon: ChartScatter,
-      title: "Business Analyst",
-      company: "Interconsulting Group",
-      period: "2011 - 2012",
-      description:
-        "Led and facilitated surveys and focus group studies across industries, enabling clients to gain deep understanding of consumer behavior and preferences for data-informed planning.",
-    },
+
   ];
 
   const volunteerExperiences = [

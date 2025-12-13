@@ -23,11 +23,12 @@ export default function About() {
 
             <div className="relative space-y-4">
               <p className="text-white font-mono">
-                👋 Hi, I’m Zagarsuren — an AI Specialist with a strong foundation in statistics, data science, and machine learning. I specialize in developing intelligent systems that leverage data-driven insights to achieve real-world impact.
+                👋 Hi, I’m Zagarsuren Sukhbaatar — AI Specialist, Educator, and Co-Founder, passionate about building intelligent systems that create measurable real-world impact. 
+                I bring a strong foundation in statistics, machine learning, and AI system development, strengthened by a Master of Artificial Intelligence from the University of Technology Sydney, where I developed advanced capabilities in data analytics, modern ML architectures, and end-to-end AI solution design. 
               </p>
               
               <p className="text-white font-mono">
-                I recently completed my Master of Artificial Intelligence degree at the University of Technology Sydney, where I developed advanced skills in data analytics, machine learning, and AI system development.
+                Today, I lead DataTech as Co-Founder & CEO, where our team of data engineers, ML specialists, and BI professionals build end-to-end Data & AI ecosystems for organizations across Mongolia. We help enterprises modernize their data infrastructure, deploy production-ready ML/DL pipelines, and unlock strategic insights that accelerate digital transformation. 
               </p>
               {/*<p className="text-white font-mono">
                 With hands-on experience in Python, TensorFlow, PyTorch, and open-source frameworks, I’ve worked on projects ranging from disaster damage segmentation using satellite imagery to inclusive AI solutions for accessibility.
